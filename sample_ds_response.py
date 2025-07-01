@@ -21,15 +21,18 @@ def main(args):
 
     theorem_generator = get_theorem_generator()
     
-    # use tqdm to show progress
-    for i in tqdm(range(args.num_examples)):
-        source_idx, target_idx = 0, 0
-        while source_idx == target_idx:
-            source_idx = torch.randint(0, len(theorem_generator.equations), (1,)).item()
-            target_idx = torch.randint(0, len(theorem_generator.equations), (1,)).item()
+    with open("100_edges.json", "r") as f:
+        edges = json.load(f)
+
+    for i, (source_idx, target_idx) in enumerate(tqdm(edges[:args.num_examples])):
+    # for i in tqdm(range(args.num_examples)):
+    #     source_idx, target_idx = 0, 0
+    #     while source_idx == target_idx:
+    #         source_idx = torch.randint(0, len(theorem_generator.equations), (1,)).item()
+    #         target_idx = torch.randint(0, len(theorem_generator.equations), (1,)).item()
 
         statement = theorem_generator.prepare_statement(source_idx=source_idx, target_idx=target_idx)
-        prompt = format_prompt(statement, cot=args.cot)
+        prompt = format_prompt(statement, cot=args.cot, informal2formal=args.informal2formal)
 
         chat = [
             {"role": "user", "content": prompt},
@@ -62,10 +65,10 @@ def main(args):
         with open(response_file_name + ".lean", "w") as f:
             f.write(full_lean_response)
         with open(response_file_name + ".json", "w") as f:
-            json.dump({
+            json.dump({ 
                 "statement": statement,
                 "response": response,
-            }, f)
+            }, f, indent=4, ensure_ascii=False)
             
             
 
@@ -75,6 +78,7 @@ def parse_args():
     parser.add_argument("--max_new_tokens", type=int, default=8192)
     parser.add_argument("--cot", action="store_true", help="Whether to use chain-of-thought prompting")
     parser.add_argument("--output_dir", type=str, default="output/ds")
+    parser.add_argument("--informal2formal", action="store_true", help="Whether to use informal-to-formal prompting")
     return parser.parse_args()
 
 if __name__ == "__main__":

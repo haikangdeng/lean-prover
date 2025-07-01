@@ -67,7 +67,7 @@ theorem EquationEQ1_not_implies_EquationEQ2 : ∃ (G: Type) (_: Magma G), Equati
 
         return f"{' '.join(variables)} : G, {left} = {right}"
 
-    def prepare_statement(self, source_idx: int, target_idx: int):
+    def prepare_statement(self, source_idx: int, target_idx: int) -> str:
         """
         Generates a Lean problem statement for a specific implication.
         Args:
@@ -117,8 +117,8 @@ def get_theorem_generator(implications_file="/data2/haikang/projects/cloned/equa
     return generator
 
 
-def format_prompt(statement: str, cot: bool):
-    if cot:
+def format_prompt(statement: str, cot: bool = False, informal2formal: bool = False):
+    if cot and not informal2formal:
         prompt = """
 Complete the following Lean 4 code:
 
@@ -129,7 +129,15 @@ Complete the following Lean 4 code:
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
 The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.
 """.strip()
-    else:
+    elif not cot and informal2formal:
+        prompt = """
+For the following problem, first work out an informal proof, and then formalize it into Lean 4 code:
+
+```lean4
+{}
+```
+""".strip()
+    elif not cot and not informal2formal:
         prompt = """
 Complete the following Lean 4 code:
 
@@ -137,5 +145,6 @@ Complete the following Lean 4 code:
 {}
 ```
 """.strip()
-
+    else:
+        raise ValueError("Invalid combination of cot and informal2formal flags.")
     return prompt.format(statement)

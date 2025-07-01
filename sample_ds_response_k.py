@@ -21,12 +21,15 @@ def main(args):
 
     theorem_generator = get_theorem_generator()
 
-    # use tqdm to show progress
-    for i in tqdm(range(args.num_examples)):
-        source_idx, target_idx = 0, 0
-        while source_idx == target_idx:
-            source_idx = torch.randint(0, len(theorem_generator.equations), (1,)).item()
-            target_idx = torch.randint(0, len(theorem_generator.equations), (1,)).item()
+    with open("100_edges.json", "r") as f:
+        edges = json.load(f)
+
+    for i, (source_idx, target_idx) in enumerate(tqdm(edges[:args.num_examples])):
+    # for i in tqdm(range(args.num_examples)):
+    #     source_idx, target_idx = 0, 0
+    #     while source_idx == target_idx:
+    #         source_idx = torch.randint(0, len(theorem_generator.equations), (1,)).item()
+    #         target_idx = torch.randint(0, len(theorem_generator.equations), (1,)).item()
 
         statement = theorem_generator.prepare_statement(source_idx=source_idx, target_idx=target_idx)
         prompt = format_prompt(statement, cot=args.cot)
@@ -98,7 +101,7 @@ def main(args):
                 json.dump({
                     "statement": statement,
                     "response": response,
-                }, f)
+                }, f, indent=4, ensure_ascii=False)
 
 
 def parse_args():

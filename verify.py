@@ -2,18 +2,17 @@ import subprocess
 import os
 from tqdm.auto import tqdm
 import json
+import argparse
 
-def main():
-    lean_dir = "/data2/haikang/projects/lean-prover/lean-project"
-    output_dir = "/data2/haikang/projects/lean-prover/output/ds/no_cot"
+def main(args):
 
     lines = []
 
-    for file in tqdm(sorted(os.listdir(output_dir))):
+    for file in tqdm(sorted(os.listdir(args.output_dir))):
         if file.endswith(".lean"):
-            file_path = os.path.join(output_dir, file)
+            file_path = os.path.join(args.output_dir, file)
             process = subprocess.run(["lake", "env", "lean", file_path], 
-                                    cwd=lean_dir, 
+                                    cwd=args.lean_dir, 
                                     capture_output=True, 
                                     text=True)
             
@@ -32,10 +31,21 @@ def main():
             }
             lines.append(line)
     
-    with open(os.path.join(output_dir, "_verification_results.jsonl"), "w") as f:
+    with open(os.path.join(args.output_dir, "_verification_results.jsonl"), "w") as f:
         for line in lines:
             json_line = json.dumps(line)
             f.write(f"{json_line}\n")
-    
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--lean_dir", type=str, default="/data2/haikang/projects/lean-prover/lean-project")
+    parser.add_argument("--output_dir", type=str, default="/data2/haikang/projects/lean-prover/output/o3-mini",
+                        help="Directory containing the generated Lean files.")
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    args = parse_args()
+    main(args)
