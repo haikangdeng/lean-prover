@@ -117,8 +117,8 @@ def get_theorem_generator(implications_file="/data2/haikang/projects/cloned/equa
     return generator
 
 
-def format_prompt(statement: str, cot: bool = False, informal2formal: bool = False):
-    if cot and not informal2formal:
+def format_prompt(statement: str, format_type: str = "default"):
+    if format_type == "cot":
         prompt = """
 Complete the following Lean 4 code:
 
@@ -129,7 +129,9 @@ Complete the following Lean 4 code:
 Before producing the Lean 4 code to formally prove the given theorem, provide a detailed proof plan outlining the main proof steps and strategies.
 The plan should highlight key ideas, intermediate lemmas, and proof structures that will guide the construction of the final formal proof.
 """.strip()
-    elif not cot and informal2formal:
+        return prompt.format(statement)
+    
+    elif format_type == "informal2formal":
         prompt = """
 For the following problem, first work out an informal proof, and then formalize it into Lean 4 code:
 
@@ -137,7 +139,39 @@ For the following problem, first work out an informal proof, and then formalize 
 {}
 ```
 """.strip()
-    elif not cot and not informal2formal:
+        return prompt.format(statement)
+    
+    elif format_type == "informal_ds":
+# # this prompt does not work for ds, still outputes lean proofs
+#         prompt = """
+# Provide a natural-language, informal proof for the following theorem:
+
+# ```lean4
+# {}
+# ```
+# """.strip()
+        prompt = """
+Complete the following Lean 4 code:
+
+```lean4
+{}
+```
+
+Before producing the Lean 4 code to formally prove the given theorem, provide an informal proof.
+""".strip()
+        return prompt.format(statement)
+    
+    elif format_type == "informal_o3":
+        prompt = """
+Provide a natural-language, informal proof for the following theorem:
+
+```lean4
+{}
+```
+""".strip()
+        return prompt.format(statement)
+    
+    elif format_type == "default":
         prompt = """
 Complete the following Lean 4 code:
 
@@ -145,6 +179,7 @@ Complete the following Lean 4 code:
 {}
 ```
 """.strip()
+        return prompt.format(statement)
+    
     else:
-        raise ValueError("Invalid combination of cot and informal2formal flags.")
-    return prompt.format(statement)
+        raise ValueError("Invalid type.")

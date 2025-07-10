@@ -1,0 +1,502 @@
+[
+    {
+        "source_idx": 3742,
+        "target_idx": 2741,
+        "NL_problem_statement": "Consider a binary operation (denoted by “◇”) defined on a set G (making G a magma). Two conditions on this operation are given:\n\n1. For every choice of elements w, x, y, and z in G, the operation satisfies\n  x ◇ y = (x ◇ z) ◇ (w ◇ x).\n\n2. For every choice of elements w, x, y, and z in G, it is claimed that\n  x = ((y ◇ y) ◇ (x ◇ z)) ◇ w.\n\nThe problem asks you to show that there exists a magma (that is, a set equipped with the binary operation ◇) in which the first condition holds while the second condition fails."
+    },
+    {
+        "source_idx": 4440,
+        "target_idx": 760,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (called a magma). Define two properties on this magma:\n\n• Property A: For every choice of elements w, x, y, and z, the equation x ◇ (y ◇ x) = (x ◇ z) ◇ w holds.\n\n• Property B: For every choice of elements x, y, and z, the equation x = y ◇ (z ◇ ((y ◇ y) ◇ x)) holds.\n\nProve that there exists a magma in which Property A is satisfied but Property B is not."
+    },
+    {
+        "source_idx": 3728,
+        "target_idx": 795,
+        "NL_problem_statement": "Consider the following problem:\n\nFind a set G with a binary operation (i.e., a magma) such that the following holds:\n1. For every choice of elements x, y, and z in G, the equation\n   x ◇ y = (x ◇ y) ◇ (z ◇ z)\n   is satisfied.\n2. However, it is not true that for every choice of elements w, x, y, and z in G the equation\n   x = y ◇ (z ◇ ((w ◇ y) ◇ x))\n   holds.\n\nIn other words, show that there exists a magma in which the first equation always holds, but the second equation does not hold universally."
+    },
+    {
+        "source_idx": 322,
+        "target_idx": 2196,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (we call such a structure a magma). We say that G satisfies Equation323 if, for every pair of elements x and y in G, the equation\n  x ◇ y = x ◇ (x ◇ y)\nholds. On the other hand, G satisfies Equation2197 if, for every triple of elements x, y, and z in G, the equation\n  x = ((y ◇ z) ◇ z) ◇ (x ◇ z)\nholds.\n\nThe problem is to show that there exists a magma G in which Equation323 is satisfied, yet Equation2197 fails (i.e., there is some triple of elements in G for which Equation2197 does not hold)."
+    },
+    {
+        "source_idx": 2980,
+        "target_idx": 4305,
+        "NL_problem_statement": "Consider algebraic structures (magmas), which are sets equipped with a binary operation (denoted by ◇). Two equations are defined on the elements of such a structure:\n\n1. Equation2981: For every choice of elements x, y, and z in the set, the equation \n  x = ((y ◇ (z ◇ x)) ◇ z) ◇ x\nholds.\n\n2. Equation4306: For every choice of elements w, x, y, and z in the set, the equation \n  x ◇ (x ◇ y) = z ◇ (y ◇ w)\nholds.\n\nThe problem asks you to show that there exists a magma (i.e., a type with a binary operation) that satisfies Equation2981 but does not satisfy Equation4306."
+    },
+    {
+        "source_idx": 2676,
+        "target_idx": 670,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (called a magma). We define two equations on such a set:\n\n• Equation2677: For every choice of elements x, y, and z, the element x equals the result of first operating x with y, then operating y with z, then operating those two results together with z; that is, x = ((x ◇ y) ◇ (y ◇ z)) ◇ z.\n\n• Equation671: For every choice of elements x, y, and z, the element x equals the result of first operating x with y, then operating that result with z (after first operating x with y to obtain x ◇ y), and finally operating y with that combined result; in symbols, x = y ◇ (x ◇ ((x ◇ y) ◇ z)).\n\nThe problem is to show that there exists a magma (a set with a binary operation) in which Equation2677 holds for all elements, but Equation671 does not hold (i.e., there is at least one counterexample to Equation671)."
+    },
+    {
+        "source_idx": 4580,
+        "target_idx": 2602,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (denoted by \"◇\")—that is, G forms a magma. Define two equations on the elements of G as follows:\n\n1. Equation4581: For every choice of elements u, w, x, y, and z in G, the equation\n  x ◇ (y ◇ z) = (w ◇ u) ◇ u\n must hold.\n\n2. Equation2603: For every choice of elements x, y, and z in G, the equation\n  x = (y ◇ ((z ◇ z) ◇ x)) ◇ z\n must hold.\n\nThe problem is to show that there exists a magma (a set G with a binary operation) in which Equation4581 is satisfied, yet Equation2603 does not hold."
+    },
+    {
+        "source_idx": 1389,
+        "target_idx": 1612,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation (denoted by “◇”). Suppose that for every choice of elements w, x, y, and z in G, the following equation holds:\n  x = y ◇ (((z ◇ z) ◇ y) ◇ w).\nProve that under this assumption, it must also be true that for all elements w, x, y, and z in G, the equation\n  x = (y ◇ z) ◇ (w ◇ (z ◇ x))\nholds."
+    },
+    {
+        "source_idx": 3599,
+        "target_idx": 3921,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (denoted ◇). Define the following two equations that must hold for every choice of three elements x, y, and z in G:\n\n1. Equation 3600: x ◇ y = z ◇ ((y ◇ x) ◇ y)\n2. Equation 3922: x ◇ y = (x ◇ (x ◇ z)) ◇ z\n\nThe problem is to show that there exists a magma (a set with such a binary operation) G in which Equation 3600 holds for all elements, but Equation 3922 does not hold (i.e., there is at least one instance where Equation 3922 fails)."
+    },
+    {
+        "source_idx": 4541,
+        "target_idx": 148,
+        "NL_problem_statement": "Consider the following problem:\n\nFind a type G equipped with a binary operation (denoted by “◇”)—that is, a magma—such that for every choice of elements x, y, and z in G the equation\n\n  x ◇ (y ◇ z) = (z ◇ x) ◇ z\n\nholds, but it is not true that for every choice of elements w, x, y, and z in G the equation\n\n  x = y ◇ ((z ◇ w) ◇ w)\n\nholds. In other words, provide an example of a magma satisfying the first equation while failing to satisfy the second equation universally."
+    },
+    {
+        "source_idx": 2953,
+        "target_idx": 372,
+        "NL_problem_statement": "Consider an algebraic structure (called a magma) with a binary operation ◇. Suppose that for every choice of elements x, y, and z in the structure, the equation\n\n  x = ((y ◇ (y ◇ y)) ◇ z) ◇ z\n\nholds. Prove that under this assumption, for every choice of elements w, x, y, and z in the structure, the equation\n\n  x ◇ x = (y ◇ z) ◇ w\n\nalso holds."
+    },
+    {
+        "source_idx": 3221,
+        "target_idx": 1443,
+        "NL_problem_statement": "Consider a set G with a binary operation (denoted by “◇”). Assume that, for any elements w, x, y, and z in G, the following equation holds:\n\n  x = (((y ◇ z) ◇ z) ◇ w) ◇ x.\n\nShow that under this assumption, for any elements x and y in G, the equation\n\n  x = (x ◇ y) ◇ (x ◇ (y ◇ x))\n\nalso holds."
+    },
+    {
+        "source_idx": 2061,
+        "target_idx": 915,
+        "NL_problem_statement": "Consider a structure (called a magma) that consists of a set G equipped with a binary operation (denoted by ◇). Now, define two equations on this structure as follows:\n\n• Equation 2062: For every choice of elements x, y, and z in G, the equation \n  x = ((x ◇ y) ◇ y) ◇ (x ◇ z)\nmust hold.\n\n• Equation 916: For every choice of elements x and y in G, the equation \n  x = y ◇ ((y ◇ y) ◇ (x ◇ x))\nmust hold.\n\nThe problem asks you to show that there exists a magma (that is, a set with a binary operation) in which Equation 2062 is satisfied but Equation 916 fails."
+    },
+    {
+        "source_idx": 1669,
+        "target_idx": 2641,
+        "NL_problem_statement": "Find a structure (a set equipped with a binary operation, called a magma) such that the following holds:\n• For every choice of elements x, y, and z in the magma, the equation x = (x ◇ y) ◇ ((z ◇ y) ◇ z) is true.\n• However, there exist some elements in the magma for which the equation x = (y ◇ ((z ◇ w) ◇ u)) ◇ u does not hold for all choices of u, w, x, y, and z.\nIn other words, show that there exists a magma that satisfies the first equation (Equation1670) but does not satisfy the second equation (Equation2642)."
+    },
+    {
+        "source_idx": 895,
+        "target_idx": 2603,
+        "NL_problem_statement": "Let (G, ◇) be a magma—that is, G is a set equipped with a binary operation ◇. Suppose that every four elements w, x, y, and z in G satisfy the equation\n\n  x = y ◇ ((x ◇ z) ◇ (y ◇ w)).\n\nProve that for every choice of w, x, y, and z in G, the following equation also holds:\n\n  x = (y ◇ ((z ◇ z) ◇ x)) ◇ w."
+    },
+    {
+        "source_idx": 2150,
+        "target_idx": 4514,
+        "NL_problem_statement": "Consider a set G with a binary operation (denoted by ◇). Assume that for every choice of four elements w, x, y, and z in G, the following equation holds:\n  x = ((y ◇ y) ◇ z) ◇ (y ◇ w).\n\nUnder this assumption, prove that for every three elements x, y, and z in G, the following equation is true:\n  x ◇ (y ◇ z) = (x ◇ z) ◇ y."
+    },
+    {
+        "source_idx": 4143,
+        "target_idx": 371,
+        "NL_problem_statement": "Consider a structure (called a magma) that consists of a set equipped with a binary operation (denoted by ◇). Define two properties of this operation as follows:\n\n1. Property Equation4144: For any elements w, x, y, and z in the set, the equation\n  x ◇ y = ((x ◇ z) ◇ y) ◇ w\nmust hold.\n\n2. Property Equation372: For any elements x, y, and z in the set, the equation\n  x ◇ x = (y ◇ z) ◇ z\nmust hold.\n\nThe problem is to show that there exists a magma for which Equation4144 is true but Equation372 does not hold. That is, demonstrate that having the property given by Equation4144 does not necessarily imply the property given by Equation372."
+    },
+    {
+        "source_idx": 1715,
+        "target_idx": 2854,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (denoted by \"◇\")—that is, a magma. Suppose that for every four elements w, x, y, and z in G, the following equation holds:\n  x = (y ◇ x) ◇ ((z ◇ w) ◇ w).\n\nThis condition is called Equation1716. Under this assumption, prove that for every two elements x and y in G, the following equation must also hold:\n  x = ((x ◇ (x ◇ y)) ◇ y) ◇ x.\n\nIn other words, show that if a magma satisfies Equation1716, then it necessarily satisfies Equation2855."
+    },
+    {
+        "source_idx": 3589,
+        "target_idx": 4282,
+        "NL_problem_statement": "Let (G, ◇) be a set equipped with a binary operation ◇. Suppose that for every choice of elements x, y, and z in G the following equation holds:\n  x ◇ y = z ◇ ((x ◇ z) ◇ x).\n\nProve that this property implies that for every choice of elements x and y in G, the equation\n  x ◇ (x ◇ y) = x ◇ (y ◇ x)\nmust also hold."
+    },
+    {
+        "source_idx": 64,
+        "target_idx": 194,
+        "NL_problem_statement": "Consider an algebraic structure (called a magma) consisting of a set G together with a binary operation (denoted by \"◇\"). In this context, define two equations as follows:\n\n• Equation65: For every pair of elements x and y in G, it holds that\n  x = y ◇ (x ◇ (y ◇ x)).\n\n• Equation195: For every three elements x, y, and z in G, it holds that\n  x = (y ◇ z) ◇ (z ◇ y).\n\nThe problem is to show that there exists a magma (that is, a set G with a binary operation ◇) in which Equation65 holds true but Equation195 does not. In other words, demonstrate that satisfying Equation65 does not necessarily imply that Equation195 is satisfied."
+    },
+    {
+        "source_idx": 3920,
+        "target_idx": 736,
+        "NL_problem_statement": "Consider an algebraic structure (called a magma) consisting of a set G equipped with a binary operation (denoted \"◇\"). Define two equations on G as follows:\n\n• Equation 3921 states that for all elements x, y, and z in G, the equation\n  x ◇ y = (x ◇ (x ◇ z)) ◇ y\nholds.\n\n• Equation 737 states that for all elements w, x, y, and z in G, the equation\n  x = y ◇ (y ◇ ((z ◇ w) ◇ z))\nholds.\n\nThe problem asks you to prove that there exists a magma (i.e., a set G with a binary operation) that satisfies Equation 3921 but does not satisfy Equation 737."
+    },
+    {
+        "source_idx": 2887,
+        "target_idx": 3107,
+        "NL_problem_statement": "Find a type G equipped with a binary operation (denoted by \"◇\") that satisfies the equation\n  for all elements x, y, and z in G, \n   x = ((x ◇ (y ◇ z)) ◇ y) ◇ z,\nbut does not satisfy the equation\n  for all x, y, and z in G,\n   x = (((y ◇ x) ◇ x) ◇ z) ◇ x."
+    },
+    {
+        "source_idx": 3261,
+        "target_idx": 2085,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (denoted by “◇”). We define two equations on G as follows:\n\n• Equation3262 states that for every pair of elements x and y in G, the element obtained by applying x to itself (x ◇ x) is equal to the element obtained by applying x to the result of applying y to (y ◇ y); in other words, x ◇ x = x ◇ (y ◇ (y ◇ y)).\n\n• Equation2086 states that for every choice of five elements u, w, x, y, and z in G, the element x is equal to the element obtained by applying x and y, then applying the result to z, and finally applying the outcome to the result of applying w to u; that is, x = ((x ◇ y) ◇ z) ◇ (w ◇ u).\n\nThe problem is to show that there exists some set G, together with a binary operation making it a magma, such that Equation3262 holds in G while Equation2086 fails to hold in G."
+    },
+    {
+        "source_idx": 3545,
+        "target_idx": 3092,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation \"◇\". We investigate the following two properties on G:\n\n1. For all elements x and y in G, the operation satisfies\n  x ◇ y = y ◇ ((x ◇ x) ◇ y).\n\n2. For all elements x, y, and z in G, the operation would satisfy\n  x = (((x ◇ y) ◇ z) ◇ z) ◇ x.\n\nThe problem is: Show that there exists a set G with a binary operation \"◇\" such that property (1) holds but property (2) does not hold."
+    },
+    {
+        "source_idx": 4187,
+        "target_idx": 301,
+        "NL_problem_statement": "Consider a structure (called a magma) consisting of a set equipped with a binary operation (denoted by ◇). Define two properties on this magma as follows:\n\n1. Equation 4188: For every choice of four elements w, x, y, and z from the set, the equality x ◇ y = ((y ◇ z) ◇ w) ◇ z holds.\n2. Equation 302: For every choice of four elements w, x, y, and z from the set, the equality x = ((y ◇ z) ◇ w) ◇ x holds.\n\nThe problem is to show that there exists a magma (that is, there exists some set with a binary operation) for which Equation 4188 is satisfied, but Equation 302 is not satisfied."
+    },
+    {
+        "source_idx": 4038,
+        "target_idx": 2711,
+        "NL_problem_statement": "Find a set G equipped with a binary operation (a magma) such that for every choice of elements w, x, y, z in G the equation\n\n  x ◇ y = (z ◇ (w ◇ x)) ◇ x\n\nholds, yet there exists at least one triple of elements x, y, z in G for which the equation\n\n  x = ((y ◇ x) ◇ (y ◇ z)) ◇ x\n\nfails. In other words, show that having the first equation valid in a magma does not guarantee that the second equation holds."
+    },
+    {
+        "source_idx": 3264,
+        "target_idx": 1133,
+        "NL_problem_statement": "Find an example of a magma (that is, a set equipped with a binary operation, denoted “◇”) having the following two properties:\n\n1. For every choice of elements x, y, and z in the magma, the equation\n  x ◇ x = x ◇ (y ◇ (z ◇ y))\n holds.\n\n2. Yet, it is not the case that for every choice of x, y, and z in the magma the equation\n  x = y ◇ ((y ◇ (z ◇ y)) ◇ y)\n holds.\n\nIn other words, show that there exists a magma in which the first equation is always satisfied while the second equation fails (is not universally valid)."
+    },
+    {
+        "source_idx": 3900,
+        "target_idx": 1481,
+        "NL_problem_statement": "Consider an algebraic structure G equipped with a binary operation ◇ (making it a “magma”). Define two equations on this structure:\n\n• Equation 3901: For every choice of elements x, y, and z in G, the equation x ◇ x = (y ◇ (z ◇ y)) ◇ x must hold.\n\n• Equation 1482: For every choice of elements x and y in G, the equation x = (y ◇ x) ◇ (x ◇ (y ◇ y)) must hold.\n\nThe problem is to show that there exists a magma (a set G with a binary operation) satisfying Equation 3901, but for which Equation 1482 does not hold."
+    },
+    {
+        "source_idx": 4433,
+        "target_idx": 3782,
+        "NL_problem_statement": "Consider a structure (a magma) consisting of a set equipped with a binary operation. We call the following two equations:\n\n• Equation 4434: For any elements x, y, and z in the set, the equation x ◇ (y ◇ x) = (x ◇ x) ◇ z holds.\n\n• Equation 3783: For any elements w, x, y, and z in the set, the equation x ◇ y = (y ◇ z) ◇ (w ◇ w) holds.\n\nThe problem is to demonstrate that Equation 4434 does not necessarily imply Equation 3783. In other words, you are asked to show that there exists a magma (a type with a binary operation) in which Equation 4434 is satisfied but Equation 3783 is not."
+    },
+    {
+        "source_idx": 3284,
+        "target_idx": 3030,
+        "NL_problem_statement": "Consider an algebraic structure (a magma) with a binary operation \"◇\". We define two equations on the magma:\n\n• Equation (3285): For every choice of elements x, y, z in the magma, the equality x ◇ x = y ◇ (y ◇ (z ◇ y)) holds.\n\n• Equation (3031): For every choice of elements w, x, y, z in the magma, the equality x = ((y ◇ (z ◇ w)) ◇ y) ◇ z holds.\n\nThe problem is to show that there exists at least one magma (that is, some type together with a binary operation) for which Equation (3285) is satisfied but Equation (3031) is not."
+    },
+    {
+        "source_idx": 54,
+        "target_idx": 980,
+        "NL_problem_statement": "Consider the following problem:\n\nFind a set G with a binary operation (making it a magma) such that for every pair of elements x and y in G the identity\n  x = x ◇ (y ◇ (y ◇ x))\nholds, but there exists at least one triple of elements x, y, z in G for which the identity\n  x = y ◇ ((z ◇ z) ◇ (y ◇ x))\nfails to hold."
+    },
+    {
+        "source_idx": 108,
+        "target_idx": 3372,
+        "NL_problem_statement": "Consider an algebraic structure (a magma) that has a binary operation (denoted by \"◇\"). The problem is to show that there exists such a magma G for which the following two conditions hold:\n\n1. For all elements x, y, z in G, the equation\n  x = x ◇ ((y ◇ y) ◇ z)\n holds.\n\n2. However, it is not true that for all elements w, x, y, z in G the equation\n  x ◇ y = y ◇ (z ◇ (z ◇ w))\n holds.\n\nIn other words, one must prove that there exists a magma G in which the first equation holds universally, while the second equation fails."
+    },
+    {
+        "source_idx": 2896,
+        "target_idx": 1483,
+        "NL_problem_statement": "Consider an abstract structure called a magma—a set equipped with a binary operation, denoted here as “◇”. Two identities (equations) in such magmas are under consideration:\n\n• The first equation requires that for every choice of elements w, x, y, and z in the magma, the element x is equal to (((x ◇ (y ◇ z)) ◇ w) ◇ w).\n\n• The second equation requires that for every choice of elements x, y, and z, the element x is equal to ((y ◇ x) ◇ (x ◇ (z ◇ x))).\n\nThe problem is to show that the first equation does not necessarily imply the second one. In other words, you must demonstrate that there exists a magma (i.e., a set with a binary operation) for which the first equation holds while the second equation fails."
+    },
+    {
+        "source_idx": 2949,
+        "target_idx": 156,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation “◇” (making it a magma). We assume that for every pair of elements x and y in G, the following identity holds:\n  x = (((y ◇ (y ◇ y)) ◇ y) ◇ y).\nUnder this assumption, prove that for every pair of elements x and y in G, the identity\n  x = ((x ◇ y) ◇ (x ◇ y))\nalso holds."
+    },
+    {
+        "source_idx": 2475,
+        "target_idx": 2779,
+        "NL_problem_statement": "Given a set G equipped with a binary operation ◇ (making it a magma), consider the following two equations that must hold for all elements x, y, and z in G:\n\n• Equation 2476: x = (x ◇ ((y ◇ z) ◇ x)) ◇ x.\n• Equation 2780: x = ((y ◇ z) ◇ (x ◇ z)) ◇ z.\n\nThe problem is to show that there exists a magma (that is, a set G with an operation ◇) in which Equation 2476 holds for all x, y, and z, but Equation 2780 does not hold for at least one choice of x, y, and z."
+    },
+    {
+        "source_idx": 1033,
+        "target_idx": 2801,
+        "NL_problem_statement": "Find a set G equipped with a binary operation (a magma) such that, for all elements w, x, y, and z in G, the equation\n  x = x ◇ ((x ◇ (y ◇ z)) ◇ w)\nholds, while at the same time the equation\n  x = ((y ◇ z) ◇ (y ◇ w)) ◇ w\ndoes not hold."
+    },
+    {
+        "source_idx": 3892,
+        "target_idx": 4601,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (a magma). We say that this magma satisfies \"Equation3893\" if for every choice of elements x, y, and z, the identity\n\n  x ◇ x = (y ◇ (y ◇ z)) ◇ x\n\nholds. Similarly, the magma satisfies \"Equation4602\" if for all elements x, y, and z the identity\n\n  (x ◇ x) ◇ y = (x ◇ z) ◇ y\n\nholds. The problem is to show that there exists a magma—that is, a set with a binary operation—for which Equation3893 holds but Equation4602 does not."
+    },
+    {
+        "source_idx": 462,
+        "target_idx": 3499,
+        "NL_problem_statement": "Problem Statement:\n\nShow that there exists a magma (a set equipped with a binary operation) satisfying the following condition: for every pair of elements x and y, the equation\n  x = y ◇ (x ◇ (x ◇ (x ◇ x)))\nholds, while at the same time there exist some elements for which the equation\n  x ◇ x = y ◇ ((z ◇ z) ◇ y)\nfails to hold for all choices of x, y, and z."
+    },
+    {
+        "source_idx": 4679,
+        "target_idx": 523,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (denoted by ◇), making it a magma. Define two properties on such magmas as follows:\n\n1. Property Equation4680: For every choice of elements w, x, y, z in G, the equation (x ◇ y) ◇ z = (y ◇ z) ◇ w holds.\n2. Property Equation524: For every choice of elements x, y, z in G, the equation x = y ◇ (y ◇ (z ◇ (y ◇ x))) holds.\n\nThe problem asks you to show that there exists a magma (that is, a set G with a binary operation ◇) such that Equation4680 is true but Equation524 is not true."
+    },
+    {
+        "source_idx": 2468,
+        "target_idx": 4265,
+        "NL_problem_statement": "Consider a binary operation (called \"◇\") on a set G. Define two equations over G:\n\n1. Equation \"2469\" requires that for every pair of elements x and y in G, the element x is equal to the result of performing the operation on x and the element obtained by first combining y with itself, then combining that result with y, and finally combining that with x. In other words, for all x and y in G: \n  x = (x ◇ ((y ◇ y) ◇ y)) ◇ x.\n\n2. Equation \"4266\" demands that for every choice of five elements u, w, x, y, and z in G, the result of combining x and y is equal to the result of taking the combination of z and w, then combining that with u, and finally combining that result with u:\n  x ◇ y = ((z ◇ w) ◇ u) ◇ u.\n\nThe problem is to show that there exists a set G, together with a binary operation making it a magma, such that Equation 2469 is satisfied while Equation 4266 fails."
+    },
+    {
+        "source_idx": 4092,
+        "target_idx": 1837,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (called a magma). Define two identities on this magma as follows:\n\n1. The first identity (Equation4093) states that for every pair of elements x and y in the magma, the result of applying the operation to x with itself (that is, x ◇ x) equals the result of first combining y with itself (y ◇ y), then combining that result with y, and finally combining that with x. In other words, for all x and y,  \n  x ◇ x = ((y ◇ y) ◇ y) ◇ x.\n\n2. The second identity (Equation1838) states that for every pair of elements x and y in the magma, the element x is equal to the result of applying the operation in a two-step process: first, combine x with the result of combining x with y, and then combine the result with itself. That is, for all x and y,  \n  x = (x ◇ (x ◇ y)) ◇ (x ◇ y).\n\nThe problem is to establish that there exists a magma (i.e., a set with a binary operation) in which the first identity (Equation4093) holds, but the second identity (Equation1838) does not hold."
+    },
+    {
+        "source_idx": 1728,
+        "target_idx": 3593,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (◇). We define two properties on G:\n\n1. Equation 1729: For every pair of elements x and y in G, the equation\n  x = (y ◇ y) ◇ ((y ◇ x) ◇ y)\nholds.\n\n2. Equation 3594: For every quadruple of elements w, x, y, and z in G, the equation\n  x ◇ y = z ◇ ((x ◇ w) ◇ x)\nholds.\n\nThe problem asks you to show that there exists a magma (a set G with a binary operation ◇) such that Equation 1729 is satisfied, but Equation 3594 is not—that is, Equation 1729 does not imply Equation 3594."
+    },
+    {
+        "source_idx": 872,
+        "target_idx": 352,
+        "NL_problem_statement": "Consider a structure (called a magma) consisting of a set equipped with a binary operation ◇. In this context, we define two equations:\n\n• Equation 873: For every pair of elements x and y in the set, it holds that x equals y ◇ ((x ◇ x) ◇ (y ◇ y)).\n\n• Equation 353: For every four elements w, x, y, and z in the set, it holds that x ◇ y equals z ◇ (z ◇ w).\n\nThe problem is to prove that there exists a magma (that is, a set with a binary operation) in which Equation 873 is true, while Equation 353 fails to hold."
+    },
+    {
+        "source_idx": 4203,
+        "target_idx": 4224,
+        "NL_problem_statement": "Consider a structure (called a magma) that consists of a set equipped with a binary operation (denoted by \"◇\"). We define two properties for such a magma:\n\n1. Property Equation4204: For every choice of four elements w, x, y, and z in the magma, the equality\n  x ◇ y = ((z ◇ x) ◇ w) ◇ y\nholds.\n\n2. Property Equation4225: For every choice of three elements x, y, and z in the magma, the equality\n  x ◇ y = ((z ◇ z) ◇ x) ◇ x\nholds.\n\nThe problem is to show that there exists a magma in which Equation4204 is satisfied but Equation4225 is not. In other words, demonstrate that there is a magma where the first property holds universally while the second property fails (i.e., is not satisfied by all elements)."
+    },
+    {
+        "source_idx": 1541,
+        "target_idx": 1697,
+        "NL_problem_statement": "Consider any set G equipped with a binary operation (denoted by ◇). Suppose that, for every choice of elements w, x, y, and z in G, the following equation holds:\n\n  x = (y ◇ y) ◇ (z ◇ (y ◇ w)).\n\nProve that, for every choice of elements x, y, and z in G, this equation also holds:\n\n  x = (y ◇ x) ◇ ((y ◇ z) ◇ y)."
+    },
+    {
+        "source_idx": 4033,
+        "target_idx": 3835,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation ◇ (i.e., a magma). Assume that for every choice of elements w, x, y, and z in G, the equation\n\n  x ◇ y = (z ◇ (z ◇ w)) ◇ x\n\nholds. Prove that under this assumption, for every w, x, y, and z in G the following equation also holds:\n\n  x ◇ y = (z ◇ w) ◇ (x ◇ x)."
+    },
+    {
+        "source_idx": 3737,
+        "target_idx": 3567,
+        "NL_problem_statement": "Prove that there exists an algebraic structure (a magma—that is, a set with a binary operation ◇) for which the following holds: for every choice of elements w, x, y, and z, the identity \n  x ◇ y = (x ◇ z) ◇ (y ◇ w)\nis satisfied, yet the identity \n  x ◇ y = y ◇ ((z ◇ x) ◇ w)\nfails to hold."
+    },
+    {
+        "source_idx": 2383,
+        "target_idx": 3429,
+        "NL_problem_statement": "Given a set G with a binary operation (denoted by “◇”), prove the following statement:\n\nAssume that for every choice of elements w, x, y, and z in G the following equation holds:\n  x = (y ◇ (z ◇ (y ◇ x))) ◇ w.\nShow that under this assumption, for every choice of w, x, y, and z in G it must also hold that:\n  x ◇ y = z ◇ (w ◇ (x ◇ x))."
+    },
+    {
+        "source_idx": 4365,
+        "target_idx": 2979,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (denoted by \"◇\"). We call such a structure a magma. In this setting, define two identities:\n\n• Identity 1 (Equation 4366): For every choice of elements w, x, y, and z in G, the equality\n  x ◇ (y ◇ z) = y ◇ (w ◇ x)\n holds.\n\n• Identity 2 (Equation 2980): For every choice of elements w, x, y, and z in G, the equality\n  x = ((y ◇ (z ◇ x)) ◇ y) ◇ w\n holds.\n\nThe problem is to show that there exists a magma (that is, a set G with a binary operation ◇) which satisfies Identity 1 but does not satisfy Identity 2. In other words, prove that the first identity (Equation 4366) does not imply the second identity (Equation 2980)."
+    },
+    {
+        "source_idx": 701,
+        "target_idx": 1770,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation (denoted by “◇”). We define two equations that must hold for every choice of five elements u, w, x, y, and z in G:\n\n• Equation 702: x is equal to y ◇ (x ◇ ((z ◇ w) ◇ u)).\n• Equation 1771: x is equal to (y ◇ z) ◇ ((x ◇ w) ◇ u).\n\nThe problem is to prove that if Equation 702 holds in G (that is, every five elements satisfy x = y ◇ (x ◇ ((z ◇ w) ◇ u))), then Equation 1771 must also hold in G (so that every five elements satisfy x = (y ◇ z) ◇ ((x ◇ w) ◇ u))."
+    },
+    {
+        "source_idx": 536,
+        "target_idx": 4245,
+        "NL_problem_statement": "Consider a binary algebraic structure, called a magma, which is just a set equipped with a binary operation (denoted by ◇). In this problem, we define two properties (or equations) for such a structure:\n\n1. The first property (Equation537) requires that for every choice of three elements x, y, and z in the magma, the following equation holds:\n  x = y ◇ (z ◇ (x ◇ (x ◇ x))).\n\n2. The second property (Equation4246) states that for every choice of five elements u, w, x, y, and z in the magma, the following equation must hold:\n  x ◇ y = ((z ◇ w) ◇ x) ◇ u.\n\nThe problem asks you to show that there exists a magma (i.e., a type together with a binary operation) that satisfies the first property (Equation537) but does not satisfy the second property (Equation4246). In other words, prove that having Equation537 hold in a magma does not necessarily imply that Equation4246 holds in that magma."
+    },
+    {
+        "source_idx": 2271,
+        "target_idx": 4395,
+        "NL_problem_statement": "Consider the following problem:\n\nFind an example of a set G equipped with a binary operation (denoted by “◇”) such that, for every choice of elements w, x, y, and z in G, the equation\n  x = ((x ◇ (y ◇ (y ◇ z))) ◇ w)\nholds, but where it is not true that for all x and y in G the equation\n  x ◇ (x ◇ y) = (x ◇ x) ◇ y\nholds. In other words, show that satisfying the first identity does not force the second identity to hold in every magma."
+    },
+    {
+        "source_idx": 4609,
+        "target_idx": 4069,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (a magma). Define two properties on this magma:\n\n1. Property 4610: For every choice of elements x, y, and z, the equation (x operated with x) operated with y equals (y operated with z) operated with x holds.\n\n2. Property 4070: For every choice of elements x and y, the equation x operated with x equals (((x operated with y) operated with x) operated with x) holds.\n\nThe problem is to show that there exists a magma (i.e., a set with a binary operation) that satisfies Property 4610 but does not satisfy Property 4070."
+    },
+    {
+        "source_idx": 4153,
+        "target_idx": 2011,
+        "NL_problem_statement": "Problem Statement:\n\nShow that there exists a set G equipped with a binary operation (i.e., a magma) such that for every pair of elements x and y in G the following equation holds:\n  x ◇ y = ((y ◇ x) ◇ x) ◇ x,\nbut G does not satisfy the following property for all elements w, x, y, and z in G:\n  x = (y ◇ (z ◇ w)) ◇ (x ◇ w)."
+    },
+    {
+        "source_idx": 183,
+        "target_idx": 1220,
+        "NL_problem_statement": "Consider any set G equipped with a binary operation (denoted by “◇”). Suppose that for every choice of elements x, y, and z in G, the following equation holds:\n\n  x = (y ◇ y) ◇ (z ◇ z).\n\nProve that under this assumption, for every choice of elements u, w, x, y, and z in G, the following equation is also true:\n\n  x = y ◇ ((z ◇ (w ◇ u)) ◇ u)."
+    },
+    {
+        "source_idx": 2531,
+        "target_idx": 3920,
+        "NL_problem_statement": "Consider a type G equipped with a binary operation \"◇\" (i.e., a magma). Define two equations on G as follows:\n\n1. Equation2532: For all elements x, y, and z in G, the equation\n  x = (y ◇ ((y ◇ x) ◇ x)) ◇ z\nmust hold.\n\n2. Equation3921: For all elements x, y, and z in G, the equation\n  x ◇ y = (x ◇ (x ◇ z)) ◇ y\nmust hold.\n\nThe problem is to prove that if the magma G satisfies Equation2532, then it necessarily satisfies Equation3921."
+    },
+    {
+        "source_idx": 3905,
+        "target_idx": 227,
+        "NL_problem_statement": "We are asked to show that there exists a set with a binary operation (a magma) such that for every elements x, y, and z in that set the equation\n\n  x operated with x equals (y operated with (z operated with z)) operated with y\n\nis always valid, yet the equation\n\n  x = (y operated with (y operated with x)) operated with x\n\ndoes not hold for every pair of elements x and y."
+    },
+    {
+        "source_idx": 2522,
+        "target_idx": 2887,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation (called ◇). Suppose that for every choice of elements x, y, and z in G, the equation\n  x = (y ◇ ((x ◇ z) ◇ z)) ◇ z\nholds true. Prove that under this assumption, for every choice of elements x, y, and z in G the equation\n  x = ((x ◇ (y ◇ z)) ◇ y) ◇ z\nalso holds."
+    },
+    {
+        "source_idx": 2612,
+        "target_idx": 3107,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation ◇ (i.e. a magma). Suppose that for every choice of elements w, x, y, and z in G the following equation holds:\n\n  x = (y ◇ ((z ◇ z) ◇ w)) ◇ x.\n\nProve that for every choice of elements x, y, and z in G, the following equation also holds:\n\n  x = (((y ◇ x) ◇ x) ◇ z) ◇ x."
+    },
+    {
+        "source_idx": 1355,
+        "target_idx": 3708,
+        "NL_problem_statement": "Consider an abstract magma—a set equipped with a binary operation denoted by \"◇\". Suppose that for every choice of elements w, x, y, and z in this magma, the following equation holds:\n\n  x = y ◇ (((z ◇ x) ◇ y) ◇ w)\n\nUnder this assumption, prove that for all elements w, x, y, and z in the magma, the following identity is also true:\n\n  x ◇ x = (y ◇ z) ◇ (w ◇ w)"
+    },
+    {
+        "source_idx": 855,
+        "target_idx": 482,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (a magma). In every such magma, we can consider the following two equations that must hold for all elements x, y, and z:\n\n • Equation 856: x must equal x combined with the result of first combining y and z, and then combining that result with the combination of y and x; in other words, x = x ◇ ((y ◇ z) ◇ (y ◇ x)).\n\n • Equation 483: x must equal y combined with the result of combining x with the result of combining z with the result of combining x with itself; that is, x = y ◇ (x ◇ (z ◇ (x ◇ x))).\n\nThe problem is to show that there exists some magma—a particular set and binary operation—where Equation 856 holds for every choice of x, y, and z, yet Equation 483 does not hold universally."
+    },
+    {
+        "source_idx": 4203,
+        "target_idx": 1824,
+        "NL_problem_statement": "Problem Statement:\nShow that there exists an algebraic structure—a set equipped with a binary operation (called a magma)—such that for every choice of elements w, x, y, and z in the set, the equation\n\n  x ◇ y = ((z ◇ x) ◇ w) ◇ y\n\nholds, yet it is not the case that for every choice of elements u, w, x, y, and z in the set the equation\n\n  x = (y ◇ z) ◇ ((w ◇ w) ◇ u)\n\nholds. In other words, prove that there is a magma satisfying the first equation (Equation4204) while failing to satisfy the second one (Equation1825)."
+    },
+    {
+        "source_idx": 1322,
+        "target_idx": 4605,
+        "NL_problem_statement": "Find a set G equipped with a binary operation (a magma) such that every pair of elements x and y in G satisfies\n\n  x = y ◇ (((y ◇ y) ◇ x) ◇ y),\n\nbut there is at least one pair of elements x and y for which\n\n  (x ◇ x) ◇ y ≠ (y ◇ x) ◇ y.\n\nIn other words, prove that there exists a magma in which the first identity holds universally while the second identity fails."
+    },
+    {
+        "source_idx": 221,
+        "target_idx": 3886,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (i.e. a magma). Define the following two equations over this magma:\n\n• Equation 222: For all elements x and y, the equation x = (y ◇ (x ◇ y)) ◇ y holds.\n• Equation 3887: For all elements x and y, the equation x ◇ x = (y ◇ (y ◇ x)) ◇ x holds.\n\nThe problem is to prove that there exists some magma (i.e. a set with a binary operation) in which Equation 222 is satisfied but Equation 3887 fails."
+    },
+    {
+        "source_idx": 2451,
+        "target_idx": 3831,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation ◇ (making it a magma). Define two equations on G:\n\n1. Equation 2452: For all elements x, y, z in G, the equation\n  x = (x ◇ ((x ◇ y) ◇ z)) ◇ x\nmust hold.\n\n2. Equation 3832: For all elements w, x, y, z in G, the equation\n  x ◇ y = (z ◇ z) ◇ (w ◇ y)\nmust hold.\n\nThe problem is to show that there exists a magma G such that Equation 2452 holds in G, yet Equation 3832 fails to hold in G."
+    },
+    {
+        "source_idx": 4613,
+        "target_idx": 3484,
+        "NL_problem_statement": "We wish to show that there exists a set equipped with a binary operation (a magma) satisfying the following condition: for all elements x, y, and z, the equation (x operated with x) operated with y is equal to (z operated with x) operated with x. However, this same magma does not satisfy the condition that for all elements x and y, the element obtained by x operated with x is equal to what you get by taking y, operating it with the result of operating y with y, and then operating that result with y. In short, we want to prove that there exists a magma in which the first equation holds universally, while the second equation fails to hold universally."
+    },
+    {
+        "source_idx": 1800,
+        "target_idx": 2642,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (making it a magma). The following are two properties defined on G:\n\n1. Property Equation1801: For every choice of four elements w, x, y, and z from G, the equality\n  x = (y operated on by z) operated on by ((z operated on by w) operated on by x)\n  must hold.\n\n2. Property Equation2643: For every choice of six elements u, v, w, x, y, and z from G, the equality\n  x = (y operated on by ((z operated on by w) operated on by u)) operated on by v\n  must hold.\n\nThe problem is to prove that there exists some magma G (i.e., some set with a binary operation) such that G satisfies Equation1801 (the property for all quadruples of elements) but does not satisfy Equation2643 (the property for all sextuples of elements)."
+    },
+    {
+        "source_idx": 4418,
+        "target_idx": 3510,
+        "NL_problem_statement": "Construct a binary system (a magma, i.e. a set equipped with a binary operation \"◇\") that satisfies the following property:\n For every three elements x, y, and z in the set, the equation\n  x ◇ (x ◇ y) = (z ◇ y) ◇ x\nholds.\nHowever, this system should fail to satisfy the property:\n For every two elements x and y, the equation\n  x ◇ y = x ◇ ((x ◇ y) ◇ x)\ndoes not hold.\nIn other words, show that there exists a magma where the first equation is universally true while the second one does not hold."
+    },
+    {
+        "source_idx": 754,
+        "target_idx": 790,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation (written as \"◇\"), called a magma. Suppose that for every choice of elements w, x, y, and z in G, the following equation holds:\n\n  x = y ◇ (z ◇ ((x ◇ w) ◇ w)).\n\nProve that, under this assumption, for every w, x, y, and z in G the equation\n\n  x = y ◇ (z ◇ ((w ◇ x) ◇ x))\n\nalso holds."
+    },
+    {
+        "source_idx": 2662,
+        "target_idx": 2344,
+        "NL_problem_statement": "Consider a structure (called a magma) consisting of a set G equipped with a binary operation (denoted by \"◇\"). Define the following two identities on the elements of G:\n\n1. Equation2663 asserts that for any two elements x and y in G, the element x equals ((x ◇ y) ◇ (x ◇ y)) ◇ y.\n\n2. Equation2345 asserts that for any three elements x, y, and z in G, the element x equals (y ◇ (y ◇ (y ◇ z))) ◇ z.\n\nThe problem is to show that there exists a magma (i.e., a set G with a binary operation) in which Equation2663 holds for all x and y, but Equation2345 does not hold (in other words, there is at least one counterexample to Equation2345)."
+    },
+    {
+        "source_idx": 4415,
+        "target_idx": 4672,
+        "NL_problem_statement": "Find a binary operation (a magma) on some set G such that for every choice of elements x, y, and z in G the equation\n\n  x operated with (x operated with y) equals (z operated with x) operated with y\n\nholds, yet the equation\n\n  (x operated with y) operated with z equals (x operated with z) operated with y\n\ndoes not hold universally in G. In other words, show that there exists a magma in which the first equation is always true while the second one fails for at least one triple of elements."
+    },
+    {
+        "source_idx": 193,
+        "target_idx": 53,
+        "NL_problem_statement": "Consider any set G equipped with a binary operation (denoted ◇). Define two equations on G as follows:\n\n• Equation 194: For all elements x, y, z in G, the equality x = (y ◇ z) ◇ (z ◇ x) holds.\n• Equation 54: For all elements x, y, z in G, the equality x = x ◇ (y ◇ (x ◇ z)) holds.\n\nThe problem is to show that there exists at least one such set G (with its binary operation) for which Equation 194 holds but Equation 54 does not."
+    },
+    {
+        "source_idx": 3247,
+        "target_idx": 4274,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (denoted by \"◇\"). Suppose that for every choice of elements u, w, x, y, and z in G, the equality\n\n  x = (((y ◇ z) ◇ w) ◇ u) ◇ y\n\nholds true.\n\nUnder this assumption, prove that for every pair of elements x and y in G, the equation\n\n  x ◇ (x ◇ x) = y ◇ (y ◇ x)\n\nalso holds."
+    },
+    {
+        "source_idx": 3704,
+        "target_idx": 4646,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (called a magma). We define two equations on this operation as follows:\n\n• Equation A (Equation3705): For every choice of elements w, x, y, and z in the magma, the equation x ◇ x = (y ◇ z) ◇ (z ◇ w) holds.\n  \n• Equation B (Equation4647): For every choice of elements x, y, and z in the magma, the equation (x ◇ y) ◇ x = (z ◇ y) ◇ z holds.\n\nThe problem asks you to show that these two equations are not equivalent by proving that there exists a magma in which Equation A is satisfied but Equation B is not."
+    },
+    {
+        "source_idx": 176,
+        "target_idx": 1933,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (called a magma). We define two identities on this magma:\n\n1. Identity 177: For every pair of elements x and y in the magma, the equation x = (y ◇ y) ◇ (x ◇ y) holds.\n2. Identity 1934: For every pair of elements x and y in the magma, the equation x = (y ◇ (y ◇ y)) ◇ (y ◇ x) holds.\n\nThe problem is to show that the first identity does not imply the second one. In other words, prove (by providing a counterexample) that there exists some magma in which every x and y satisfy Identity 177, yet there is at least one pair of elements for which Identity 1934 fails."
+    },
+    {
+        "source_idx": 4326,
+        "target_idx": 2000,
+        "NL_problem_statement": "Consider an algebraic structure (called a magma) that consists of a set equipped with a binary operation, which we denote by “◇”. We define two identities for any such structure:\n\n1. Equation4327: For all elements x, y, and z in the set, the equation\n   x ◇ (y ◇ x) = z ◇ (x ◇ x)\n   must hold.\n\n2. Equation2001: For all elements x, y, and z in the set, the equation\n   x = (y ◇ (z ◇ z)) ◇ (z ◇ y)\n   must hold.\n\nThe problem asks us to show that the first identity (Equation4327) does not imply the second (Equation2001). In particular, exhibit or prove that there exists a magma (a set with a binary operation) for which Equation4327 is true but Equation2001 fails."
+    },
+    {
+        "source_idx": 1626,
+        "target_idx": 4080,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (denoted by \"◇\")—that is, G forms a magma. Suppose that for every choice of five elements u, w, x, y, and z in G, the following equation holds:\n  x = (y ◇ z) ◇ (w ◇ (u ◇ u)).\nProve that under this assumption, it follows that for every pair of elements x and y in G, we have:\n  x ◇ x = ((y ◇ x) ◇ x) ◇ y."
+    },
+    {
+        "source_idx": 832,
+        "target_idx": 4113,
+        "NL_problem_statement": "Consider a set equipped with a binary operation (this structure is called a magma). Define two properties of such a magma:\n\n1. Property A (\"Equation833\"): For every choice of two elements x and y from the set, the equation\n  x = x operated with ((y operated with x) operated with (x operated with y))\nholds true.\n\n2. Property B (\"Equation4114\"): For every choice of four elements w, x, y, and z from the set, the equation\n  x operated with x = ((y operated with z) operated with w) operated with z\nholds true.\n\nThe problem is to show that there exists a magma (i.e., a set with a binary operation) in which Property A holds but Property B does not hold."
+    },
+    {
+        "source_idx": 4118,
+        "target_idx": 2627,
+        "NL_problem_statement": "Consider an algebraic structure (specifically, a magma, which is just a set equipped with a binary operation) and two identities defined on it. The first identity, call it Equation4119, asserts that for every choice of elements x, y, and z in the magma, the equation\n\n  x ◇ y = ((x ◇ x) ◇ x) ◇ z\n\nholds. The second identity, call it Equation2628, asserts that for every choice of elements w, x, y, and z in the magma, the equation\n\n  x = (y ◇ ((z ◇ w) ◇ z)) ◇ x\n\nholds.\n\nThe problem is to show that these two identities are not equivalent—specifically, to prove that there exists a magma (a set with a binary operation) which satisfies Equation4119 but does not satisfy Equation2628."
+    },
+    {
+        "source_idx": 614,
+        "target_idx": 3657,
+        "NL_problem_statement": "Consider a binary operation ◇ on a set (called a \"magma\"). Define two equations:\n\n1. Equation 615 states that for every pair of elements x and y, the following holds:\n  x = x ◇ (x ◇ ((x ◇ x) ◇ y)).\n\n2. Equation 3658 states that for every choice of elements u, v, w, x, y, and z, one has:\n  x ◇ y = z ◇ ((w ◇ u) ◇ v).\n\nThe problem is to show that there exists at least one magma (that is, a set equipped with the binary operation ◇) that satisfies Equation 615 but does not satisfy Equation 3658."
+    },
+    {
+        "source_idx": 3652,
+        "target_idx": 2642,
+        "NL_problem_statement": "Consider a binary structure (a magma), that is, a set G equipped with a binary operation (denoted ◇). Define the following two equations on G:\n\n1. Equation 3653: For every choice of elements u, w, x, y, and z in G, the equation x ◇ y = z ◇ ((w ◇ u) ◇ x) holds.\n\n2. Equation 2643: For every choice of elements u, v, w, x, y, and z in G, the equation x = (y ◇ ((z ◇ w) ◇ u)) ◇ v holds.\n\nThe problem is to show that there exists a magma G such that Equation 3653 is satisfied, but Equation 2643 is not satisfied."
+    },
+    {
+        "source_idx": 535,
+        "target_idx": 1305,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation “◇”. Assume that for any five elements u, w, x, y, and z in G, the equation\n  x = y ◇ (y ◇ (z ◇ (w ◇ u)))\nholds. Prove that under this assumption, for any four elements w, x, y, and z in G, the equation\n  x = y ◇ (((x ◇ z) ◇ z) ◇ w)\nalso holds."
+    },
+    {
+        "source_idx": 3201,
+        "target_idx": 1822,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation \"◇\". Suppose that for every choice of elements x, y, and z in G, the following equation holds:\n  x = (((y ◇ z) ◇ y) ◇ z) ◇ y.\nProve that under this assumption, for every choice of elements w, x, y, and z in G, the equation\n  x = (y ◇ z) ◇ ((w ◇ w) ◇ z)\nalso holds."
+    },
+    {
+        "source_idx": 1469,
+        "target_idx": 1548,
+        "NL_problem_statement": "Consider the following problem:\n\nShow that there exists a set G equipped with a binary operation (that is, a magma) such that for all elements x, y, and z in G the identity\n\n  x = (x ◇ y) ◇ (z ◇ (z ◇ y))\n\nholds, but the identity\n\n  x = (y ◇ y) ◇ (z ◇ (w ◇ z))\n\ndoes not hold for every choice of elements w, x, y, and z in G.\n\nIn other words, prove that the first equation (let’s call it Equation1470) does not imply the second equation (Equation1549) by constructing or showing the existence of a magma where Equation1470 holds while Equation1549 fails."
+    },
+    {
+        "source_idx": 4672,
+        "target_idx": 3123,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation “◇”. Define two properties on G as follows:\n\n1. Equation4673: For every choice of elements x, y, and z in G, the equation (x ◇ y) ◇ z = (x ◇ z) ◇ y holds.\n2. Equation3124: For every choice of elements x, y, and z in G, the equation x = (((y ◇ x) ◇ z) ◇ x) ◇ z holds.\n\nThe problem is to prove that there exists at least one such set G with a binary operation “◇” (i.e., a magma) that satisfies Equation4673 but does not satisfy Equation3124."
+    },
+    {
+        "source_idx": 3669,
+        "target_idx": 4196,
+        "NL_problem_statement": "Consider algebraic structures equipped with a binary operation (called magmas). Define a binary operation ◇ on a set G such that for every choice of elements x, y, and z in G the following equation holds:\n\n  x ◇ x = (x ◇ y) ◇ (z ◇ x).\n\nNow consider a different equation that requires, for every x, y, and z in G:\n\n  x ◇ y = ((z ◇ x) ◇ y) ◇ z.\n\nThe problem is: Show that there exists a set G with a binary operation ◇ (i.e., a magma) for which the first equation holds for all choices of x, y, and z, but the second equation does not hold (i.e., it fails to hold for at least one choice of x, y, and z)."
+    },
+    {
+        "source_idx": 56,
+        "target_idx": 443,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation (called \"◇\"). Suppose that for every choice of elements x, y, and z in G, the equation\n  x = x ◇ (y ◇ (y ◇ z))\nholds. Prove that under this assumption, for every x, y, and z in G it also holds that\n  x = x ◇ (y ◇ (y ◇ (z ◇ z)))."
+    },
+    {
+        "source_idx": 1341,
+        "target_idx": 4411,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation ◇ (i.e. a magma). Assume that for every x, y, z in G, the following equation holds:\n  x = y ◇ (((y ◇ z) ◇ z) ◇ z).\n\nProve that under this assumption, for every x, y, z in G the following equation also holds:\n  x ◇ (x ◇ y) = (y ◇ z) ◇ y."
+    },
+    {
+        "source_idx": 2768,
+        "target_idx": 2938,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation “◇”. We define two universal equations on G:\n\n• Equation 2769: For any five elements u, w, x, y, and z in G, the element x is equal to ((y ◇ y) ◇ (z ◇ w)) ◇ u.\n\n• Equation 2939: For any two elements x and y in G, the element x is equal to ((y ◇ (y ◇ x)) ◇ y) ◇ x.\n\nThe problem is to prove that if Equation 2769 holds for all elements in G, then Equation 2939 must also hold for all elements in G."
+    },
+    {
+        "source_idx": 1680,
+        "target_idx": 2846,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation (denoted by \"◇\"). Define two equations on G as follows:\n\n• Equation 1681: For any elements x and y in G, x is equal to (y ◇ x) ◇ ((x ◇ x) ◇ x).\n\n• Equation 2847: For any element x in G, x is equal to ((x ◇ (x ◇ x)) ◇ x) ◇ x.\n\nThe problem is to prove that there exists a set G with a binary operation such that Equation 1681 holds for every choice of elements in G, but Equation 2847 does not hold."
+    },
+    {
+        "source_idx": 3010,
+        "target_idx": 3404,
+        "NL_problem_statement": "Consider an algebraic structure consisting of a set equipped with a binary operation (called a magma). We define two equations that might hold for every choice of three elements in this structure:\n\n1. Equation 3011: For every x, y, and z in the magma, x equals the result of first applying the operation to z with itself, then applying the operation to y and that result, then applying the operation to y, and finally applying the operation to x. In symbolic terms, x = ((y ◇ (z ◇ z)) ◇ y) ◇ x.\n\n2. Equation 3405: For every x, y, and z in the magma, performing the operation on x and y yields the same result as first applying the operation to z with y ◇ (z ◇ y). That is, x ◇ y = z ◇ (y ◇ (z ◇ y)).\n\nThe problem is to show that there exists a magma (i.e., a set with a binary operation) in which Equation 3011 holds for all elements, but Equation 3405 does not hold for all elements."
+    },
+    {
+        "source_idx": 2293,
+        "target_idx": 1978,
+        "NL_problem_statement": "Consider an algebraic structure called a magma, which is simply a set equipped with a binary operation (denoted by “◇”). We define two equations on any such magma:\n\n• Equation 2294: For every pair of elements x and y in the set, the following equality holds:\n  x = (y ◇ (x ◇ (x ◇ y))) ◇ y.\n\n• Equation 1979: For every three elements x, y, and z in the set, the following equality holds:\n  x = (y ◇ (z ◇ y)) ◇ (y ◇ x).\n\nThe problem is to show that there exists a magma (i.e., a type equipped with a binary operation) in which Equation 2294 is satisfied but Equation 1979 does not hold."
+    },
+    {
+        "source_idx": 1846,
+        "target_idx": 4426,
+        "NL_problem_statement": "Consider an algebraic structure (a magma) equipped with a binary operation \"◇\". We define two equations on such a magma as follows:\n\n• Equation 1847: For every pair of elements x and y of the magma, the equation\n  x = (x ◇ (y ◇ x)) ◇ (x ◇ x)\nholds.\n\n• Equation 4427: For every four elements w, x, y, and z of the magma, the equation\n  x ◇ (x ◇ y) = (z ◇ w) ◇ x\nholds.\n\nThe problem is to show that there exists a magma in which Equation 1847 is satisfied, yet Equation 4427 does not hold."
+    },
+    {
+        "source_idx": 2503,
+        "target_idx": 254,
+        "NL_problem_statement": "Find a set G equipped with a binary operation “◇” (forming what is known as a magma) that satisfies the following condition for every pair of elements x and y in G:\n\n  x = (y ◇ ((x ◇ y) ◇ x)) ◇ y.\n\nMoreover, show that in this magma the equation\n\n  x = ((x ◇ x) ◇ x) ◇ x\n\ndoes not hold for all elements x in G. In other words, prove that there exists a magma in which the first equation is always true while the second equation fails."
+    },
+    {
+        "source_idx": 4508,
+        "target_idx": 869,
+        "NL_problem_statement": "Consider a binary structure (called a magma) with a binary operation “◇”. We are given two equations that might be satisfied by such a structure:\n\n1. Equation 4509: For every choice of elements w, x, y, z, the equation\n  x ◇ (y ◇ z) = (x ◇ x) ◇ w\nholds.\n\n2. Equation 870: For every choice of elements x and y, the equation\n  x = y ◇ ((x ◇ x) ◇ (x ◇ y))\nholds.\n\nThe problem is to show that there exists a magma (that is, a type with a binary operation) which satisfies Equation 4509 but does not satisfy Equation 870."
+    },
+    {
+        "source_idx": 2250,
+        "target_idx": 1730,
+        "NL_problem_statement": "We are asked to show that there exists a magma—that is, a set G equipped with a binary operation ◇—for which the following holds:\n\n• For all elements x, y, and z in G, the equation\n  x = (x ◇ (x ◇ (y ◇ z))) ◇ z\nholds.\n\nHowever, it is not the case that:\n\n• For all elements x and y in G, the equation\n  x = (y ◇ y) ◇ ((y ◇ y) ◇ x)\nholds.\n\nIn other words, find a magma where the first equation (called Equation2251) is true but the second equation (called Equation1731) fails."
+    },
+    {
+        "source_idx": 3662,
+        "target_idx": 370,
+        "NL_problem_statement": "Consider an algebraic structure called a magma, which is simply a set equipped with a binary operation. In this context, define the following two equations for any elements x, y, and z of the structure:\n\n• Equation 3663: The element x operated with itself equals (x operated with itself) operated with (y operated with z).\n• Equation 371: The element x operated with itself equals (y operated with z) operated with y.\n\nThe problem is to show that these two equations are not equivalent by proving that there exists a magma in which Equation 3663 holds but Equation 371 does not."
+    },
+    {
+        "source_idx": 678,
+        "target_idx": 457,
+        "NL_problem_statement": "Consider any algebraic structure (called a magma) consisting of a set equipped with a binary operation (denoted by “◇”). The problem asks you to prove the following:\n\nShow that there exists a magma G such that the equation\n  for all elements x and y in G, x equals y ◇ (x ◇ ((y ◇ y) ◇ x))\nholds, but the equation\n  for all elements w, x, y, and z in G, x equals x ◇ (y ◇ (z ◇ (w ◇ x)))\ndoes not hold.\n\nIn other words, find a magma where the first identity is satisfied universally, while the second identity fails for at least one choice of elements."
+    },
+    {
+        "source_idx": 1261,
+        "target_idx": 4259,
+        "NL_problem_statement": "Consider an algebraic structure (called a magma) consisting of a set equipped with a binary operation. Define two identities for such a magma:\n\n1. The first identity requires that for every choice of elements x, y, and z in the structure, the equation \n  x = x ◇ (((y ◇ z) ◇ y) ◇ x)\nholds.\n\n2. The second identity requires that for every choice of elements w, x, y, and z in the structure, the equation \n  x ◇ y = ((z ◇ w) ◇ w) ◇ w\nholds.\n\nThe problem is to show that there exists a magma (a set with a binary operation) for which the first identity holds while the second identity does not hold."
+    },
+    {
+        "source_idx": 3170,
+        "target_idx": 1120,
+        "NL_problem_statement": "Consider a binary operation (denoted by “◇”) on a set (i.e. a magma). Define the following two identities on this magma:\n\n1. Identity Equation3171: For every choice of elements w, x, y, and z, the equality \n  x = (((y ◇ y) ◇ z) ◇ w) ◇ x \nmust hold.\n\n2. Identity Equation1121: For every choice of elements x, y, and z, the equality \n  x = y ◇ ((y ◇ (y ◇ x)) ◇ z) \nmust hold.\n\nThe problem asks you to show that Equation3171 does not imply Equation1121. In other words, prove that there exists a magma in which the operation satisfies Equation3171 but fails to satisfy Equation1121."
+    }
+]

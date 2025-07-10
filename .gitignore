@@ -1,4 +1,5 @@
 __pycache__/
 output/
 output_k/
+output_informal/
 theorem_generator.pkl

@@ -1,0 +1,502 @@
+[
+    {
+        "source_idx": 3742,
+        "target_idx": 2741,
+        "NL_problem_statement": "We consider a structure (called a magma) on some type G with a binary operation denoted by \"◇\". Two properties are defined for such a magma:\n\n1. Equation3743: For every choice of elements w, x, y, and z in G, the equation x ◇ y = (x ◇ z) ◇ (w ◇ x) holds.\n2. Equation2742: For every choice of elements w, x, y, and z in G, the equation x = ((y ◇ y) ◇ (x ◇ z)) ◇ w holds.\n\nThe theorem asserts that there exists a type G, together with a magma structure on it, such that Equation3743 is satisfied but Equation2742 is not."
+    },
+    {
+        "source_idx": 4440,
+        "target_idx": 760,
+        "NL_problem_statement": "There exists a type G equipped with a binary operation such that for every choice of elements w, x, y, and z in G the equation x ◇ (y ◇ x) = (x ◇ z) ◇ w holds, but it is not true that for every choice of elements x, y, and z in G the equation x = y ◇ (z ◇ ((y ◇ y) ◇ x)) holds."
+    },
+    {
+        "source_idx": 3728,
+        "target_idx": 795,
+        "NL_problem_statement": "There exists a type G equipped with a binary operation (a magma) such that, for every choice of elements x, y, and z in G the equation x ◇ y = (x ◇ y) ◇ (z ◇ z) holds, yet it is not true that for every choice of elements w, x, y, and z in G the equation x = y ◇ (z ◇ ((w ◇ y) ◇ x)) holds."
+    },
+    {
+        "source_idx": 322,
+        "target_idx": 2196,
+        "NL_problem_statement": "There exists a type G equipped with a binary operation (a magma) such that for every two elements x and y in G, the operation always satisfies the equation x ◇ y = x ◇ (x ◇ y), but it is not the case that for every three elements x, y, and z in G the equation x = ((y ◇ z) ◇ z) ◇ (x ◇ z) holds."
+    },
+    {
+        "source_idx": 2980,
+        "target_idx": 4305,
+        "NL_problem_statement": "We begin by considering a magma, which is simply a type equipped with a binary operation (denoted here by ◇). Two properties (or equations) are defined on such a structure. The first property (Equation2981) states that for every choice of elements x, y, and z in the magma, the element x is equal to ((y operated with (z operated with x)) operated with z) operated with x. The second property (Equation4306) asserts that for every choice of elements w, x, y, and z in the magma, the result of operating x with (x operated with y) is equal to the result of operating z with (y operated with w). The theorem then claims that there exists some magma (that is, some type along with a binary operation) where the first property holds while the second property does not hold."
+    },
+    {
+        "source_idx": 2676,
+        "target_idx": 670,
+        "NL_problem_statement": "We consider a set equipped with a binary operation (called a magma). Two equations regarding this operation are defined:\n\n1. Equation2677 states that for every choice of three elements x, y, and z in the set, the element x is equal to the result of first combining x with y, then combining y with z, then combining those two outcomes, and finally combining that result with z; formally, x = ((x ◇ y) ◇ (y ◇ z)) ◇ z.\n\n2. Equation671 states that for every choice of three elements x, y, and z in the set, the element x is equal to the result of combining y with the outcome of combining x with the result of first combining x with y and then combining that with z; formally, x = y ◇ (x ◇ ((x ◇ y) ◇ z)).\n\nThe theorem asserts that there exists a magma (a set with a binary operation) for which Equation2677 holds but Equation671 does not hold."
+    },
+    {
+        "source_idx": 4580,
+        "target_idx": 2602,
+        "NL_problem_statement": "There exists a type G equipped with a binary operation (making it a magma) such that for every choice of elements u, w, x, y, and z in G the following equation holds: x operated with (y operated with z) equals (w operated with u) operated with u; yet it is not the case that for every choice of elements x, y, and z in G the equation x equals (y operated with ((z operated with z) operated with x)) operated with z holds."
+    },
+    {
+        "source_idx": 1389,
+        "target_idx": 1612,
+        "NL_problem_statement": "Consider an algebraic structure (called a magma) consisting of a type G together with a binary operation (denoted by “◇”). We define two properties on such a structure:\n\n1. Equation1390 holds if, for all elements w, x, y, z in G, we have x equal to y operated with the result of applying ◇ to z operated with z, then to y, and then finally to w (in other words, x = y ◇ (((z ◇ z) ◇ y) ◇ w)).\n\n2. Equation1613 holds if, for all elements w, x, y, z in G, we have x equal to the result of operating (y ◇ z) with the result of operating w with (z ◇ x) (that is, x = (y ◇ z) ◇ (w ◇ (z ◇ x))).\n\nThe theorem states that if the property Equation1390 holds for G, then Equation1613 also holds for G."
+    },
+    {
+        "source_idx": 3599,
+        "target_idx": 3921,
+        "NL_problem_statement": "We define a magma as a type equipped with a binary operation, denoted by “◇”. Then we introduce two equations on any such magma. The first equation, Equation3600, requires that for all elements x, y, and z in the magma, the result of applying ◇ to x and y equals the result of applying ◇ to z and the result of applying ◇ to y, x, and then y again. The second equation, Equation3922, demands that for all x, y, and z, the result of x ◇ y is the same as the result of applying ◇ to the result of x ◇ (x ◇ z) and z. The theorem asserts that there exists a magma (that is, a type with a binary operation) in which Equation3600 holds but Equation3922 does not."
+    },
+    {
+        "source_idx": 4541,
+        "target_idx": 148,
+        "NL_problem_statement": "We define a magma to be any type equipped with a binary operation (written as “◇”). Two equations are introduced on such a magma:\n\n1. Equation 4542 states that for every x, y, and z in the magma, the operation satisfies the identity\n  x ◇ (y ◇ z) = (z ◇ x) ◇ z.\n\n2. Equation 149 states that for every w, x, y, and z in the magma, we have\n  x = y ◇ ((z ◇ w) ◇ w).\n\nThe theorem to be proven asserts that there exists some magma (that is, some type together with a binary operation) for which Equation 4542 holds but Equation 149 does not hold."
+    },
+    {
+        "source_idx": 2953,
+        "target_idx": 372,
+        "NL_problem_statement": "For any type G equipped with a binary operation (that is, for any magma), if every element x equals the result of (((y operated with (y operated with y)) operated with z) operated with z) for all choices of elements y and z in G, then it follows that for every choice of elements w, x, y, and z in G the result of x operated with itself equals the result of (y operated with z) operated with w."
+    },
+    {
+        "source_idx": 3221,
+        "target_idx": 1443,
+        "NL_problem_statement": "Consider a structure with a binary operation (denoted by \"◇\") on a set G (a magma). We define two equations over the elements of G. The first equation, called Equation3222, states that for every choice of elements w, x, y, and z in G, the element x is equal to the result of (((y ◇ z) ◇ z) ◇ w) ◇ x. The second equation, called Equation1444, states that for every pair of elements x and y in G, the element x is equal to (x ◇ y) ◇ (x ◇ (y ◇ x)). The theorem asserts that if the magma G satisfies Equation3222, then it must also satisfy Equation1444."
+    },
+    {
+        "source_idx": 2061,
+        "target_idx": 915,
+        "NL_problem_statement": "We are asked to show that there exists a magma—that is, a set equipped with a binary operation denoted by “◇”—for which the following holds: for all elements x, y, and z in the set, x equals ((x ◇ y) ◇ y) ◇ (x ◇ z) (this is called Equation2062); yet, the equation stating that for all elements x and y, x equals y ◇ ((y ◇ y) ◇ (x ◇ x)) (called Equation916) does not hold in that same magma."
+    },
+    {
+        "source_idx": 1669,
+        "target_idx": 2641,
+        "NL_problem_statement": "Consider a structure (called a magma) on some type G with a binary operation (denoted ◇). The first property, Equation1670, states that for every three elements x, y, and z in G, the element x equals the result of first combining x with y (using ◇) and then combining that result with the result of combining z with y and then with z. The second property, Equation2642, asserts that for every five elements u, w, x, y, and z in G, the element x equals the result of first combining y with the result of combining z with w and then with u, and then combining that with u.\n\nThe theorem claims that there exists a magma G (i.e., a type G equipped with a binary operation defined by Magma) such that G satisfies the first property (Equation1670) but does not satisfy the second property (Equation2642)."
+    },
+    {
+        "source_idx": 895,
+        "target_idx": 2603,
+        "NL_problem_statement": "Let G be a type equipped with a binary operation (denoted by “◇”). We define two equations as follows:\n\n• Equation896 states that for every choice of elements w, x, y, and z in G, the element x is equal to the result of applying the operation \"◇\" to y and the product of (x ◇ z) with (y ◇ w).\n\n• Equation2604 states that for every choice of elements w, x, y, and z in G, the element x is equal to the result of first computing (z ◇ z) ◇ x, then applying the operation “◇” to y and that result, and finally applying the operation “◇” to the outcome with w.\n\nThe theorem claims that if Equation896 holds in G, then Equation2604 must also hold in G."
+    },
+    {
+        "source_idx": 2150,
+        "target_idx": 4514,
+        "NL_problem_statement": "Consider a structure called a magma, which is simply a set equipped with a binary operation (denoted by \"◇\"). We define two properties on any such magma:\n\n1. Property Equation2151: For every choice of elements w, x, y, and z in the magma, the element x is equal to the result of first operating y with itself, then operating that result with z, and finally operating the result with the outcome of operating y with w. In other words, no matter which elements you pick, x always equals ((y ◇ y) ◇ z) ◇ (y ◇ w).\n\n2. Property Equation4515: For every choice of elements x, y, and z in the magma, when you first operate y with z and then operate x with that result, you get the same as if you first operate x with z and then operate that result with y. That is, x ◇ (y ◇ z) equals (x ◇ z) ◇ y.\n\nThe theorem states that if a magma satisfies Property Equation2151, then it must also satisfy Property Equation4515."
+    },
+    {
+        "source_idx": 4143,
+        "target_idx": 371,
+        "NL_problem_statement": "We define a magma as a type equipped with a binary operation denoted by \"◇\". Two equations are then introduced on any magma G:\n\n• Equation4144 states that for every choice of elements w, x, y, and z in G, the equation x ◇ y = ((x ◇ z) ◇ y) ◇ w holds.\n\n• Equation372 states that for every choice of elements x, y, and z in G, the equation x ◇ x = (y ◇ z) ◇ z holds.\n\nThe task is to show that there exists a magma G for which Equation4144 holds but Equation372 does not hold."
+    },
+    {
+        "source_idx": 1715,
+        "target_idx": 2854,
+        "NL_problem_statement": "We begin by considering a structure called a magma on a type G, which means there is a binary operation (written as \"◇\") that takes two elements of G and returns another element of G. Two equations are defined on such a magma:\n\n1. Equation1716 says that for every choice of elements w, x, y, and z in G, we have x = (y ◇ x) ◇ ((z ◇ w) ◇ w).\n\n2. Equation2855 says that for every pair of elements x and y in G, we have x = ((x ◇ (x ◇ y)) ◇ y) ◇ x.\n\nThe theorem then states that if Equation1716 holds in any given magma G, it necessarily follows that Equation2855 also holds in G."
+    },
+    {
+        "source_idx": 3589,
+        "target_idx": 4282,
+        "NL_problem_statement": "Consider a set G equipped with a binary operation, written as “◇”. The statement defines two properties:\n\n1. The first property (Equation3590) says that for every choice of elements x, y, and z in G, the equation\n  x ◇ y = z ◇ ((x ◇ z) ◇ x)\nholds.\n\n2. The second property (Equation4283) says that for every pair of elements x and y in G, the equation\n  x ◇ (x ◇ y) = x ◇ (y ◇ x)\nholds.\n\nThe theorem asserts that if G satisfies the first property, then it must also satisfy the second property."
+    },
+    {
+        "source_idx": 64,
+        "target_idx": 194,
+        "NL_problem_statement": "We consider a structure (called a Magma) consisting of a set with a binary operation, denoted by “◇”. In this context, the first equation (Equation65) is defined to mean that for every choice of two elements x and y in the set, the equality x = y ◇ (x ◇ (y ◇ x)) holds. The second equation (Equation195) is defined to mean that for every choice of three elements x, y, and z in the set, the equality x = (y ◇ z) ◇ (z ◇ y) holds. The statement to be proved asserts that there exists a Magma (that is, a type equipped with such an operation) which satisfies Equation65 but does not satisfy Equation195."
+    },
+    {
+        "source_idx": 3920,
+        "target_idx": 736,
+        "NL_problem_statement": "We define a magma as a set provided with a binary operation (denoted by \"◇\"). For any such set, we say it satisfies \"Equation3921\" if for every choice of elements x, y, and z the following holds: x ◇ y is equal to (x ◇ (x ◇ z)) ◇ y. Similarly, we say it satisfies \"Equation737\" if for every choice of elements w, x, y, and z, we have x equal to y ◇ (y ◇ ((z ◇ w) ◇ z)). The theorem claims that there exists a magma (a set with a binary operation) which satisfies Equation3921 but does not satisfy Equation737."
+    },
+    {
+        "source_idx": 2887,
+        "target_idx": 3107,
+        "NL_problem_statement": "Consider a structure called a magma, which is a type with a binary operation (denoted by “◇”). Define two equations on any magma:\n\n• Equation2888 asserts that for any elements x, y, and z of the magma, the equality\n  x = ((x ◇ (y ◇ z)) ◇ y) ◇ z\nholds.\n\n• Equation3108 asserts that for any elements x, y, and z of the magma, the equality\n  x = (((y ◇ x) ◇ x) ◇ z) ◇ x\nholds.\n\nThe goal is to prove that there exists some magma (a type equipped with a binary operation) such that Equation2888 is true for all its elements, but Equation3108 is not true."
+    },
+    {
+        "source_idx": 3261,
+        "target_idx": 2085,
+        "NL_problem_statement": "We want to show that there is a type G equipped with a binary operation (called ◇) such that, on one hand, the following equation holds for every pair of elements x and y in G:\n  x ◇ x = x ◇ (y ◇ (y ◇ y)),\nbut on the other hand, the equation\n  x = ((x ◇ y) ◇ z) ◇ (w ◇ u)\ndoes not always hold for all elements u, w, x, y, and z in G."
+    },
+    {
+        "source_idx": 3545,
+        "target_idx": 3092,
+        "NL_problem_statement": "There exists a type G and a binary operation on G (making it a magma) such that for every two elements x and y in G, the operation satisfies the equation x ◇ y = y ◇ ((x ◇ x) ◇ y), yet it is not true that for every three elements x, y, and z in G the equation x = (((x ◇ y) ◇ z) ◇ z) ◇ x holds."
+    },
+    {
+        "source_idx": 4187,
+        "target_idx": 301,
+        "NL_problem_statement": "We consider a set G equipped with a binary operation (denoted by “◇”) that turns it into a magma. Two identities are defined on any such magma: the first, called Equation4188, says that for every choice of elements w, x, y, and z in G the equality x ◇ y = ((y ◇ z) ◇ w) ◇ z holds; the second, called Equation302, says that for all w, x, y, and z in G we have x = ((y ◇ z) ◇ w) ◇ x. The theorem asserts that there is at least one magma G for which Equation4188 is satisfied but Equation302 is not."
+    },
+    {
+        "source_idx": 4038,
+        "target_idx": 2711,
+        "NL_problem_statement": "There exists a type G with a magma structure (a set equipped with a binary operation ◇) such that for all elements w, x, y, and z in G the equation x ◇ y = (z ◇ (w ◇ x)) ◇ x holds, while it is not true that for all x, y, and z in G the equation x = ((y ◇ x) ◇ (y ◇ z)) ◇ x holds."
+    },
+    {
+        "source_idx": 3264,
+        "target_idx": 1133,
+        "NL_problem_statement": "There exists a type G equipped with a binary operation (making it a magma) such that for every three elements x, y, and z in G the equation x ◇ x = x ◇ (y ◇ (z ◇ y)) holds, but it is not true that for every three elements x, y, and z in G the equation x = y ◇ ((y ◇ (z ◇ y)) ◇ y) holds."
+    },
+    {
+        "source_idx": 3900,
+        "target_idx": 1481,
+        "NL_problem_statement": "We define a magma as a set equipped with a binary operation (denoted by \"◇\"). Then we consider two equations on any magma G. Equation3901 requires that for all elements x, y, and z in G, the result of applying the operation to x with itself (x ◇ x) equals the result of first computing (y ◇ (z ◇ y)) and then applying the operation to that result and x; that is, x ◇ x = (y ◇ (z ◇ y)) ◇ x holds for all x, y, z in G. Equation1482 requires that for all elements x and y in G, x equals the result of first computing (y ◇ x) and (x ◇ (y ◇ y)) and then applying the operation to these two results; that is, x = (y ◇ x) ◇ (x ◇ (y ◇ y)) for all x, y in G. The theorem asserts that there exists some magma G in which Equation3901 holds but Equation1482 does not hold."
+    },
+    {
+        "source_idx": 4433,
+        "target_idx": 3782,
+        "NL_problem_statement": "We define a magma as a type equipped with a binary operation. Then we introduce two properties:\n\n• Equation4434 says that for every three elements x, y, and z in the magma, the equation x operated with (y operated with x) equals (x operated with x) operated with z.\n\n• Equation3783 says that for every four elements w, x, y, and z in the magma, the equation x operated with y equals (y operated with z) operated with (w operated with w).\n\nThe theorem claims that there exists a magma (that is, there is a type together with a binary operation) that satisfies Equation4434 but does not satisfy Equation3783."
+    },
+    {
+        "source_idx": 3284,
+        "target_idx": 3030,
+        "NL_problem_statement": "Consider a type G equipped with a binary operation (called “◇”) that turns it into a magma. We define two equations on the elements of G. Equation3285 states that for any three elements x, y, and z in G, the result of applying the operation to x and x is equal to the result of applying the operation to y and the result of applying the operation to y and to the result of applying the operation to z and y—that is, x ◇ x = y ◇ (y ◇ (z ◇ y)). Equation3031 states that for any four elements w, x, y, and z in G, the element x is equal to the result of applying the operation to y and z after computing y ◇ (z ◇ w), and then applying the operation to that result with y and finally with z — in other words, x = ((y ◇ (z ◇ w)) ◇ y) ◇ z.\n\nThe theorem asserts that there exists a type G with a magma structure (i.e., a binary operation “◇”) such that Equation3285 holds for G while Equation3031 does not hold for G."
+    },
+    {
+        "source_idx": 54,
+        "target_idx": 980,
+        "NL_problem_statement": "We consider a structure called a Magma, which is a type equipped with a binary operation noted as \"◇\". Two equations are defined on a Magma:\n\n1. Equation55 asserts that for any elements x and y, the element x is equal to x operated with (y operated with (y operated with x)).\n\n2. Equation981 asserts that for any elements x, y, and z, the element x is equal to y operated with ((z operated with z) operated with (y operated with x)).\n\nThe theorem states that there exists a type G with a Magma structure such that Equation55 holds on G but Equation981 does not."
+    },
+    {
+        "source_idx": 108,
+        "target_idx": 3372,
+        "NL_problem_statement": "Consider any type G equipped with a binary operation ◇ (making it a magma). We define Equation109 on G to mean that for all elements x, y, and z in G, the equality x = x ◇ ((y ◇ y) ◇ z) holds. We define Equation3373 on G to mean that for all elements w, x, y, and z in G, the equality x ◇ y = y ◇ (z ◇ (z ◇ w)) holds.\n\nThe theorem asserts that there exists some magma G for which Equation109 holds but Equation3373 does not hold."
+    },
+    {
+        "source_idx": 2896,
+        "target_idx": 1483,
+        "NL_problem_statement": "We consider a structure called a magma, which is simply a type equipped with a binary operation (denoted by \"◇\"). Two equations are defined on such structures. The first equation (Equation2897) asserts that for every choice of elements w, x, y, and z in the structure, the equality x = (((x ◇ (y ◇ z)) ◇ w) ◇ w) holds. The second equation (Equation1484) asserts that for every choice of elements x, y, and z, the equality x = ((y ◇ x) ◇ (x ◇ (z ◇ x))) holds. The theorem states that there exists a magma (that is, a type along with its binary operation) in which Equation2897 holds but Equation1484 does not."
+    },
+    {
+        "source_idx": 2949,
+        "target_idx": 156,
+        "NL_problem_statement": "We consider an algebraic structure called a magma, which is a set equipped with a binary operation (denoted by “◇”). Two equations are introduced on any such structure. The first equation (named Equation2950) asserts that for every pair of elements x and y in the magma, x is equal to the result of applying the operation in the following nested manner: (((y ◇ (y ◇ y)) ◇ y) ◇ y). The second equation (named Equation157) states that for every pair of elements x and y, x is equal to the result of taking the operation of x and y, and then applying the operation to that result with itself, that is, (x ◇ y) ◇ (x ◇ y). The theorem to be proved claims that if the magma satisfies the first equation (Equation2950), then it necessarily satisfies the second equation (Equation157)."
+    },
+    {
+        "source_idx": 2475,
+        "target_idx": 2779,
+        "NL_problem_statement": "We consider a structure called a magma, which is simply a type equipped with a binary operation (denoted by \"◇\"). Two equations are defined on such structures:\n\n• Equation 2476 states that for every three elements x, y, and z, x equals the result obtained by first combining y and z, then combining that result with x, then combining x with this outcome, and finally combining that with x again.\n\n• Equation 2780 states that for every three elements x, y, and z, x equals the result obtained by combining y and z first, then combining x and z, and finally combining these two results with z.\n\nThe theorem asserts that there exists a magma (a type with a binary operation) which satisfies Equation 2476 while failing to satisfy Equation 2780."
+    },
+    {
+        "source_idx": 1033,
+        "target_idx": 2801,
+        "NL_problem_statement": "Consider a type G equipped with a binary operation (denoted by “◇”), forming what is called a magma. Two equations are defined for any four elements w, x, y, and z of this magma:\n\n• Equation1034 requires that for every choice of w, x, y, and z in G, the equality\n  x = x ◇ ((x ◇ (y ◇ z)) ◇ w)\nholds.\n\n• Equation2802 requires that for every choice of w, x, y, and z in G, the equality\n  x = ((y ◇ z) ◇ (y ◇ w)) ◇ w\nholds.\n\nThe theorem asserts that there exists a magma—i.e., a type G together with a suitable binary operation—for which Equation1034 is satisfied, yet Equation2802 does not hold."
+    },
+    {
+        "source_idx": 3892,
+        "target_idx": 4601,
+        "NL_problem_statement": "We define a structure called a Magma, which is a type equipped with a binary operation denoted by “◇”. Then, we introduce two equations on any Magma. The first equation (Equation3893) states that for all elements x, y, and z in the Magma, the expression x ◇ x is equal to (y ◇ (y ◇ z)) ◇ x. The second equation (Equation4602) states that for all elements x, y, and z, the expression (x ◇ x) ◇ y is equal to (x ◇ z) ◇ y.\n\nThe theorem asserts that there exists a Magma—that is, some type with a defined binary operation—where the first equation holds for all its elements, yet the second equation fails to hold."
+    },
+    {
+        "source_idx": 462,
+        "target_idx": 3499,
+        "NL_problem_statement": "We define a magma as a set equipped with a binary operation, denoted here by \"◇\". The first equation, Equation463, asserts that for any two elements x and y in the magma, x is equal to y combined with the result of combining four copies of x (specifically, x = y ◇ (x ◇ (x ◇ (x ◇ x)))). The second equation, Equation3500, states that for any three elements x, y, and z in the magma, the result of combining x with itself (x ◇ x) is equal to y combined with the result of first combining z with itself and then combining that result with y (that is, x ◇ x = y ◇ ((z ◇ z) ◇ y)). The theorem claims that there exists a magma for which Equation463 holds while Equation3500 fails."
+    },
+    {
+        "source_idx": 4679,
+        "target_idx": 523,
+        "NL_problem_statement": "We define a magma as a type equipped with a binary operation, which we denote by the symbol “◇”. Then, for any magma G, Equation4680 is the property that for every choice of elements w, x, y, and z in G, the equality (x ◇ y) ◇ z = (y ◇ z) ◇ w holds. Also, for any magma G, Equation524 is the property that for every choice of elements x, y, and z, we have x = y ◇ (y ◇ (z ◇ (y ◇ x))). The theorem states that there exists a type G with a magma structure such that Equation4680 is satisfied but Equation524 is not."
+    },
+    {
+        "source_idx": 2468,
+        "target_idx": 4265,
+        "NL_problem_statement": "There is a mathematical object G equipped with a binary operation (written as \"◇\")—that is, G is a magma. We define Equation2469 for G to mean that, for any elements x and y in G, the equality x = (x ◇ ((y ◇ y) ◇ y)) ◇ x holds. We also define Equation4266 for G to mean that, for any elements u, w, x, y, and z in G, the equality x ◇ y = ((z ◇ w) ◇ u) ◇ u holds. The theorem then claims that there exists a magma G for which Equation2469 is true, while Equation4266 is not true."
+    },
+    {
+        "source_idx": 4092,
+        "target_idx": 1837,
+        "NL_problem_statement": "We define a magma as a structure consisting of a type and a binary operation (denoted by ◇). Two equations are then introduced for any such magma:\n • Equation 4093 asserts that for every pair of elements x and y in the magma, the result of applying the operation to x with itself (x ◇ x) is equal to the result of first applying the operation to y with itself twice (that is, compute y ◇ y, then (y ◇ y) ◇ y) and then combining that result with x (i.e., ((y ◇ y) ◇ y) ◇ x).\n • Equation 1838 states that for every pair of elements x and y, the element x is equal to the result of first forming x ◇ y, then using that result in two successive operations with x (namely, compute x ◇ (x ◇ y) and then (x ◇ (x ◇ y)) ◇ (x ◇ y)).\nThe theorem claims that there exists some magma (i.e., some type together with a binary operation) in which Equation 4093 holds universally, but Equation 1838 fails to hold."
+    },
+    {
+        "source_idx": 1728,
+        "target_idx": 3593,
+        "NL_problem_statement": "Consider structures called magmas, which are sets equipped with a binary operation (denoted by \"◇\"). Define two properties for any such structure:\n\n• Equation1729 holds if, for every pair of elements x and y, the element x is equal to the result of first applying the operation to y with itself (forming y ◇ y), then applying the operation to that result and the result of applying the operation to (y ◇ x) and y. In symbolic form, for every x and y, x = (y ◇ y) ◇ ((y ◇ x) ◇ y).\n\n• Equation3594 holds if, for every choice of elements w, x, y, and z, the result of applying the operation to x and y is equal to the result of applying the operation to z and the element obtained by applying the operation to (x ◇ w) and x. That is, for every w, x, y, z, x ◇ y = z ◇ ((x ◇ w) ◇ x).\n\nThe theorem states that there exists a type (a set) and a magma structure on it such that Equation1729 holds, yet Equation3594 does not hold."
+    },
+    {
+        "source_idx": 872,
+        "target_idx": 352,
+        "NL_problem_statement": "We define a structure called a magma, which is simply a type equipped with a binary operation (denoted by \"◇\"). Then we introduce two equations:\n\n1. Equation873: For any elements x and y in the magma, it must hold that x is equal to y operated with the result of operating x with itself and y with itself; that is, x equals y ◇ ((x ◇ x) ◇ (y ◇ y)).\n\n2. Equation353: For any elements w, x, y, and z in the magma, the operation of x with y must equal the operation of z with the result of operating z with w; that is, x ◇ y equals z ◇ (z ◇ w).\n\nThe theorem states that there exists some magma (that is, some type equipped with a binary operation) which satisfies Equation873 but does not satisfy Equation353."
+    },
+    {
+        "source_idx": 4203,
+        "target_idx": 4224,
+        "NL_problem_statement": "We define a magma to be a type equipped with a binary operation (written as “◇”). Two equations are then introduced on any such magma. Equation4204 states that for every choice of four elements w, x, y, and z in the magma, the result of x ◇ y equals the result of taking z ◇ x, then combining that with w using the operation, and finally operating on y; in other words, x ◇ y = ((z ◇ x) ◇ w) ◇ y. Equation4225 states that for every choice of three elements x, y, and z in the magma, x ◇ y equals the result of taking z ◇ z, then combining that with x using the operation, and finally operating on x; that is, x ◇ y = ((z ◇ z) ◇ x) ◇ x. The theorem asserts that there exists some magma (i.e., some type with a Magma structure) in which Equation4204 holds but Equation4225 does not hold."
+    },
+    {
+        "source_idx": 1541,
+        "target_idx": 1697,
+        "NL_problem_statement": "We consider an algebraic structure (a “magma”) consisting of a set G together with a binary operation (written as “◇”). We define two equations on such a structure. The first equation (called Equation1542) states that for every choice of elements w, x, y, and z in G, the element x is equal to the result of applying the operation to (y applied to y) and (z applied to the result of y applied to w). The second equation (called Equation1698) asserts that for every choice of elements x, y, and z in G, the element x is equal to the result of applying the operation to (y applied to x) and (the result of applying the operation to (y applied to z) and y). The theorem claims that if the magma G satisfies the first equation (Equation1542), then it necessarily satisfies the second equation (Equation1698)."
+    },
+    {
+        "source_idx": 4033,
+        "target_idx": 3835,
+        "NL_problem_statement": "We start with a type G equipped with a binary operation, which is abstractly called a magma. Two properties are defined on this structure. The first, Equation 4034, states that for any elements w, x, y, and z in G, applying the binary operation to x and y gives the same result as first applying the operation to z and w in a nested way (specifically, z operated with the result of z operated with w) and then operating that result with x. The second property, Equation 3836, asserts that for any elements w, x, y, and z in G, x operated with y is equal to the result of operating (z operated with w) and then operating that result with (x operated with itself). The theorem claims that if the structure G satisfies Equation 4034, then it must also satisfy Equation 3836."
+    },
+    {
+        "source_idx": 3737,
+        "target_idx": 3567,
+        "NL_problem_statement": "Consider a structure called a \"magma,\" which is simply any set equipped with a binary operation (denoted here by the symbol ◇). We define two properties for such magmas:\n\n1. Equation3738: For any elements w, x, y, and z in the magma, the equation x ◇ y equals (x ◇ z) ◇ (y ◇ w) must hold.\n\n2. Equation3568: For any elements w, x, y, and z in the magma, the equation x ◇ y equals y ◇ ((z ◇ x) ◇ w) must hold.\n\nThe theorem states that there exists at least one magma (that is, some set with a binary operation) in which Equation3738 is true but Equation3568 is not true."
+    },
+    {
+        "source_idx": 2383,
+        "target_idx": 3429,
+        "NL_problem_statement": "We start by considering a Magma, which is simply a set equipped with a binary operation (written here as “◇”). Two properties (or equations) are then defined on such a structure. \n\nThe first property, Equation2384, states that for any four elements w, x, y, and z in the set, the element x is equal to the result of first combining y with the result of combining z with the combination of y and x, and then combining that result with w. In other words, x = (y ◇ (z ◇ (y ◇ x))) ◇ w.\n\nThe second property, Equation3430, declares that for any four elements w, x, y, and z in the set, the combination of x and y is equal to the result of combining z with the result of first combining w with the result of combining x with itself. That is, x ◇ y = z ◇ (w ◇ (x ◇ x)).\n\nThe theorem then claims that if the first property (Equation2384) holds for the Magma, then the second property (Equation3430) must also hold."
+    },
+    {
+        "source_idx": 4365,
+        "target_idx": 2979,
+        "NL_problem_statement": "There exists a magma (that is, a type equipped with a binary operation ◇) for which the following is true: for all elements w, x, y, and z in the magma, the equation x ◇ (y ◇ z) = y ◇ (w ◇ x) holds, but it is not the case that for all elements w, x, y, and z the equation x = ((y ◇ (z ◇ x)) ◇ y) ◇ w holds."
+    },
+    {
+        "source_idx": 701,
+        "target_idx": 1770,
+        "NL_problem_statement": "Consider an algebraic system G equipped with a binary operation (denoted by ◇). Two equations are introduced:\n\n• Equation 702 states that for every choice of elements u, w, x, y, and z in G, the element x is equal to the result of combining y with the element obtained by applying ◇ to x and to the outcome of first combining z and w, then combining that result with u.\n\n• Equation 1771 states that for every choice of elements u, w, x, y, and z in G, the element x is equal to the result of first combining y and z and then combining that result with the outcome of first combining x and w, followed by combining that with u.\n\nThe theorem asserts that in any such system G, if Equation 702 holds, then Equation 1771 must also hold."
+    },
+    {
+        "source_idx": 536,
+        "target_idx": 4245,
+        "NL_problem_statement": "We begin with a structure called a magma, which is simply a type equipped with one binary operation (written here as \"◇\"). Two specific equations are then defined for any such magma:\n\n1. Equation537 states that for every choice of elements x, y, and z in the magma, the element x is equal to y operated on by the result of z operated on by the result of x operating on the result of x operating on x (that is, x = y ◇ (z ◇ (x ◇ (x ◇ x)))).\n\n2. Equation4246 says that for every choice of elements u, w, x, y, and z in the magma, the result of x operating on y is equal to the result of taking z operated on w, then operating on x, and finally operating on u (namely, x ◇ y = ((z ◇ w) ◇ x) ◇ u).\n\nThe theorem asserts that there exists some magma (a type with a binary operation) in which Equation537 holds true, yet Equation4246 does not hold."
+    },
+    {
+        "source_idx": 2271,
+        "target_idx": 4395,
+        "NL_problem_statement": "Consider any set G equipped with a binary operation (written as \"◇\"). Define the following two properties on G:\n\n• Equation2272 states that for any four elements w, x, y, and z in G, the element x is equal to the result of first combining y with z twice (forming y ◇ (y ◇ z)), then combining that with x (forming x ◇ (y ◇ (y ◇ z))), and finally combining that result with w (forming (x ◇ (y ◇ (y ◇ z))) ◇ w).\n\n• Equation4396 states that for any elements x and y in G, the result of combining x with the result of combining x and y (i.e. x ◇ (x ◇ y)) is equal to the result of first combining x with itself (forming x ◇ x) and then combining that with y (i.e. (x ◇ x) ◇ y).\n\nThe theorem asserts that there exists a set G with a binary operation (a magma) for which Equation2272 holds for every choice of w, x, y, and z, but Equation4396 does not hold."
+    },
+    {
+        "source_idx": 4609,
+        "target_idx": 4069,
+        "NL_problem_statement": "Consider a structure (called a magma) consisting of a set equipped with a binary operation, denoted by \"◇\". We define one property (Equation4610) to mean that for any three elements x, y, and z in the set, the equation (x ◇ x) ◇ y equals (y ◇ z) ◇ x is satisfied. We define a second property (Equation4070) to mean that for any two elements x and y in the set, the equation x ◇ x equals ((x ◇ y) ◇ x) ◇ x is satisfied. The theorem states that there exists a magma (a set with this binary operation) for which the first property (Equation4610) holds, yet the second property (Equation4070) does not hold."
+    },
+    {
+        "source_idx": 4153,
+        "target_idx": 2011,
+        "NL_problem_statement": "We define a structure called a magma, which is simply a set equipped with a binary operation (written as “◇”). Two equations are then introduced. In the first equation, for every pair of elements x and y in the magma, it is required that x ◇ y equals the result of performing ◇ in the following order: first compute y ◇ x, then combine that result with x, and finally combine that outcome with x again. In the second equation, for every four elements w, x, y, and z in the magma, it is required that x equals the result of first combining z and w, then combining y with that result, and finally combining that outcome with the result of combining x and w. The theorem states that there exists a magma—a type equipped with such a binary operation—for which the first equation holds universally, but the second equation does not hold universally."
+    },
+    {
+        "source_idx": 183,
+        "target_idx": 1220,
+        "NL_problem_statement": "Consider any set equipped with a binary operation (a magma). We define two properties (or equations) on such a structure. The first property, Equation184, requires that for every choice of elements x, y, and z in the magma, x is equal to the result of applying the operation to the square of y and the square of z—that is, x equals (y operated with y) operated with (z operated with z). The second property, Equation1221, requires that for every choice of elements u, w, x, y, and z in the magma, x is equal to y operated with the result of applying the operation to the result of operating z with the result of operating w with u, and u. The theorem claims that if the magma satisfies Equation184, then it necessarily satisfies Equation1221."
+    },
+    {
+        "source_idx": 2531,
+        "target_idx": 3920,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation (denoted by ◇). We define two equations on G. The first, Equation 2532, asserts that for every trio of elements x, y, and z in G, the element x is equal to the result of first combining y with the result of combining (y ◇ x) with x, and then combining that with z; in other words, x = (y ◇ ((y ◇ x) ◇ x)) ◇ z. The second, Equation 3921, asserts that for every x, y, and z in G, the result of combining x and y is equal to the result of combining (x ◇ (x ◇ z)) with y; that is, x ◇ y = (x ◇ (x ◇ z)) ◇ y. The problem asks us to prove that in any magma (a set with a binary operation) G, if Equation 2532 holds, then Equation 3921 must also hold."
+    },
+    {
+        "source_idx": 3905,
+        "target_idx": 227,
+        "NL_problem_statement": "There exists a type G with a binary operation ◇ (making it a magma) such that the following equation holds: for every x, y, and z in G, operating x with itself (x ◇ x) is equal to operating y with the result of operating z with itself and then with y ((y ◇ (z ◇ z)) ◇ y). However, G does not satisfy the equation that for every x and y in G, x is equal to the result of operating y with the result of operating y with x and then with x ((y ◇ (y ◇ x)) ◇ x)."
+    },
+    {
+        "source_idx": 2522,
+        "target_idx": 2887,
+        "NL_problem_statement": "Consider an algebraic structure (a Magma) with a binary operation ◇. We define two equations on any Magma G:\n\n1. Equation2523 asserts that for every choice of elements x, y, and z in G, the equality\n  x = (y ◇ ((x ◇ z) ◇ z)) ◇ z\nholds.\n\n2. Equation2888 asserts that for all elements x, y, and z in G, the equality\n  x = ((x ◇ (y ◇ z)) ◇ y) ◇ z\nholds.\n\nThe theorem states that if Equation2523 is satisfied in a Magma G, then Equation2888 must also be satisfied in that Magma."
+    },
+    {
+        "source_idx": 2612,
+        "target_idx": 3107,
+        "NL_problem_statement": "Suppose we have a type G equipped with a binary operation (denoted by ◇). The statement defines two equations on G. \n\nThe first, Equation2613, asserts that for every choice of elements w, x, y, and z in G, the element x equals the result of performing the operation on y and the element obtained by first applying the operation to z with itself, then applying the operation to that result and w, and then finally applying the operation on that result with x. \n\nThe second, Equation3108, asserts that for every choice of elements x, y, and z in G, the element x equals the result of performing the operation in the following way: first take y and x, then combine the result with x, then combine that with z, and finally combine that with x. \n\nThe theorem states that if G satisfies the first equation (Equation2613), then it must also satisfy the second equation (Equation3108)."
+    },
+    {
+        "source_idx": 1355,
+        "target_idx": 3708,
+        "NL_problem_statement": "Consider any type G equipped with a binary operation ◇ (so that (G, ◇) forms a magma). The first property, called Equation1356, asserts that for every choice of elements w, x, y, and z in G, the element x is equal to the result of applying the operation ◇ to y and the element obtained by successively combining z, x, y, and w as follows: first compute z ◇ x, then combine that with y using ◇, and finally combine the result with w. The second property, called Equation3709, states that for every choice of elements w, x, y, and z in G, the element obtained by combining x with itself (x ◇ x) is equal to the result of first combining y with z, then combining w with itself, and finally combining those two results using ◇.\n\nThe theorem asserts that if Equation1356 holds in G (i.e. if x always equals y ◇ (((z ◇ x) ◇ y) ◇ w) for all elements w, x, y, and z), then Equation3709 must also hold in G (i.e. it must be that x ◇ x always equals (y ◇ z) ◇ (w ◇ w) for all w, x, y, and z)."
+    },
+    {
+        "source_idx": 855,
+        "target_idx": 482,
+        "NL_problem_statement": "Consider a structure (called a magma) over some type, which means that there is a binary operation (denoted by “◇”) defined on that type. We define two properties:\n\n1. Equation856 states that for every three elements x, y, and z, the equation x = x ◇ ((y ◇ z) ◇ (y ◇ x)) holds.\n\n2. Equation483 states that for every three elements x, y, and z, the equation x = y ◇ (x ◇ (z ◇ (x ◇ x))) holds.\n\nThe theorem asserts that there exists at least one magma (a type equipped with a binary operation) in which Equation856 holds but Equation483 does not hold."
+    },
+    {
+        "source_idx": 4203,
+        "target_idx": 1824,
+        "NL_problem_statement": "Consider any structure (called a magma) that consists of a type with a binary operation (denoted by “◇”). We define two equations on such a structure. Equation 4204 requires that for every choice of elements w, x, y, and z in the magma, the result of x ◇ y equals the result of first computing z ◇ x, then combining that result with w using ◇, and finally combining that with y using ◇; in other words, x ◇ y must equal ((z ◇ x) ◇ w) ◇ y. Equation 1825 requires that for every choice of elements u, w, x, y, and z, the element x is equal to the result of first computing y ◇ z and then combining that with the result of (w ◇ w) ◇ u using ◇; that is, x must equal (y ◇ z) ◇ ((w ◇ w) ◇ u). The theorem claims that there exists some magma (a type together with its binary operation) for which Equation 4204 holds but Equation 1825 does not hold."
+    },
+    {
+        "source_idx": 1322,
+        "target_idx": 4605,
+        "NL_problem_statement": "We define a “magma” to be a type equipped with a binary operation (written here as “◇”). Two equations are considered on any such magma G. Equation 1323 says that for all elements x and y in G, x is equal to y ◇ (((y ◇ y) ◇ x) ◇ y). Equation 4606 says that for all elements x and y in G, (x ◇ x) ◇ y is equal to (y ◇ x) ◇ y. The theorem claims that there exists some magma G for which Equation 1323 holds but Equation 4606 does not hold."
+    },
+    {
+        "source_idx": 221,
+        "target_idx": 3886,
+        "NL_problem_statement": "We define a structure called a \"Magma\" on any type, which consists of a binary operation (denoted by \"◇\"). Then, “Equation222” for a magma means that for every two elements x and y, the equality x = (y ◇ (x ◇ y)) ◇ y holds. Similarly, “Equation3887” for a magma means that for every two elements x and y, the equality x ◇ x = (y ◇ (y ◇ x)) ◇ x holds.\n\nThe theorem states that there exists a type equipped with a magma structure where Equation222 holds but Equation3887 does not hold."
+    },
+    {
+        "source_idx": 2451,
+        "target_idx": 3831,
+        "NL_problem_statement": "There exists a set G equipped with a binary operation (making it a magma) such that every three elements x, y, and z in G satisfy the equation x = (x ◇ ((x ◇ y) ◇ z)) ◇ x, yet there are some four elements w, x, y, and z in G for which the equation x ◇ y = (z ◇ z) ◇ (w ◇ y) does not hold."
+    },
+    {
+        "source_idx": 4613,
+        "target_idx": 3484,
+        "NL_problem_statement": "We define a magma as a set equipped with a binary operation (denoted here by \"◇\"). Equation4614 is the statement that for every three elements x, y, and z in the magma, the result of first combining x with itself and then combining that result with y is equal to the result of first combining z with x and then combining that result with x. Equation3485 is the statement that for any two elements x and y in the magma, the result of combining x with itself is equal to the result of combining y with the result of first combining y with itself and then combining that result with y. The theorem asserts that there exists a magma in which Equation4614 holds but Equation3485 does not."
+    },
+    {
+        "source_idx": 1800,
+        "target_idx": 2642,
+        "NL_problem_statement": "Consider a type G equipped with a binary operation (denoted by ◇). We say that G satisfies Equation 1801 if for every choice of elements w, x, y, and z in G the equation\n  x = (y ◇ z) ◇ ((z ◇ w) ◇ x)\nholds true. Similarly, G satisfies Equation 2643 if for every choice of elements u, v, w, x, y, and z in G we have\n  x = (y ◇ ((z ◇ w) ◇ u)) ◇ v.\nThe theorem then asserts that there exists a type G with such a binary operation for which Equation 1801 holds, yet Equation 2643 fails."
+    },
+    {
+        "source_idx": 4418,
+        "target_idx": 3510,
+        "NL_problem_statement": "There exists a type G equipped with a binary operation (making it a magma) such that for every choice of elements x, y, and z in G the equation x operating with (x operating with y) equals (z operating with y) operating with x holds, while it is not the case that for all x and y in G the equation x operated with y equals x operated with ((x operated with y) operated with x) holds."
+    },
+    {
+        "source_idx": 754,
+        "target_idx": 790,
+        "NL_problem_statement": "Consider any set G equipped with a binary operation ◇ (so that G forms a magma). We define two properties on G:\n\n• Equation755 states that for every choice of elements w, x, y, and z in G, the equality\n  x = y ◇ (z ◇ ((x ◇ w) ◇ w))\nholds.\n\n• Equation791 states that for every choice of elements w, x, y, and z in G, the equality\n  x = y ◇ (z ◇ ((w ◇ x) ◇ x))\nholds.\n\nThe problem is to prove that if G satisfies Equation755, then G also satisfies Equation791."
+    },
+    {
+        "source_idx": 2662,
+        "target_idx": 2344,
+        "NL_problem_statement": "We define a binary operation (denoted by ◇) on a set, which means the set is a magma. Then we introduce two equations:\n1. Equation2663 states that for every pair of elements x and y in the set, the following holds: x equals the result of performing the operation on x and y twice, and then combining that result with y, i.e., x = ((x ◇ y) ◇ (x ◇ y)) ◇ y.\n2. Equation2345 states that for every three elements x, y, and z in the set, x equals the result of combining y with z in a nested way: x = (y ◇ (y ◇ (y ◇ z))) ◇ z.\nThe theorem claims that there is at least one example of a set (with its magma structure) in which Equation2663 holds, but Equation2345 does not."
+    },
+    {
+        "source_idx": 4415,
+        "target_idx": 4672,
+        "NL_problem_statement": "We are working with a structure called a magma, which is simply a type equipped with a binary operation (written as \"◇\"). Two identities are defined on any magma G:\n\n1. Equation4416 states that for every choice of elements x, y, and z in G, the equality x ◇ (x ◇ y) = (z ◇ x) ◇ y holds.\n2. Equation4673 states that for all elements x, y, and z in G, the equality (x ◇ y) ◇ z = (x ◇ z) ◇ y holds.\n\nThe theorem claims that there exists some magma G (that is, some type with a specified binary operation) for which Equation4416 is true while Equation4673 fails."
+    },
+    {
+        "source_idx": 193,
+        "target_idx": 53,
+        "NL_problem_statement": "There exists a type G with a magma structure (a set G equipped with a binary operation denoted by \"◇\") such that every triple of elements x, y, and z in G satisfies the equation x = (y ◇ z) ◇ (z ◇ x), yet not every triple satisfies the equation x = x ◇ (y ◇ (x ◇ z))."
+    },
+    {
+        "source_idx": 3247,
+        "target_idx": 4274,
+        "NL_problem_statement": "Consider an arbitrary type G equipped with a binary operation (denoted by “◇”) making it a magma. We introduce two equations on G:\n\n• The first equation (Equation3248) states that for any elements u, w, x, y, and z in G, the element x is equal to the result of the expression (((y ◇ z) ◇ w) ◇ u) ◇ y.\n\n• The second equation (Equation4275) states that for any elements x and y in G, the result of x ◇ (x ◇ x) equals the result of y ◇ (y ◇ x).\n\nThe theorem then claims that if every five elements in G satisfy Equation3248, then every pair of elements in G must satisfy Equation4275."
+    },
+    {
+        "source_idx": 3704,
+        "target_idx": 4646,
+        "NL_problem_statement": "We define a structure called a magma, which is just a type equipped with a binary operation (denoted by \"◇\"). Two properties are then introduced:\n\n1. Equation3705 states that for any four elements w, x, y, and z of a magma G, the element obtained by applying the operation to x with itself (x ◇ x) is equal to the result of first applying the operation to y and z and then applying the operation to z and w; that is, x ◇ x = (y ◇ z) ◇ (z ◇ w).\n\n2. Equation4647 states that for any three elements x, y, and z of a magma G, the result of applying the operation to x and y and then to x (i.e. (x ◇ y) ◇ x) is equal to the result obtained by applying the operation to z and y and then to z; that is, (x ◇ y) ◇ x = (z ◇ y) ◇ z.\n\nThe theorem asserts that there exists a magma G (that is, a type with a binary operation) such that Equation3705 holds for G while Equation4647 does not hold for G."
+    },
+    {
+        "source_idx": 176,
+        "target_idx": 1933,
+        "NL_problem_statement": "Consider a structure (called a magma) that consists of a type G together with a binary operation (written as \"◇\"). Equation 177 asserts that for every pair of elements x and y in G, the element x is equal to the result of applying the operation to (y applied to y) and (x applied to y); in other words, x = (y ◇ y) ◇ (x ◇ y). Equation 1934 asserts that for every pair of elements x and y in G, the element x is equal to (y applied to (y applied to y)) applied to (y applied to x); that is, x = (y ◇ (y ◇ y)) ◇ (y ◇ x).\n\nThe problem statement then claims that there exists a type G with a magma structure such that Equation 177 holds universally, while Equation 1934 fails to hold (i.e., it is not the case that Equation 1934 holds for all elements of G)."
+    },
+    {
+        "source_idx": 4326,
+        "target_idx": 2000,
+        "NL_problem_statement": "We're working with an abstract structure called a magma—a set equipped with a binary operation (written as \"◇\"). Two properties are defined for such a magma: \n\n1. Equation4327 states that for any elements x, y, and z in the magma, the equation x ◇ (y ◇ x) = z ◇ (x ◇ x) holds.\n\n2. Equation2001 states that for any elements x, y, and z in the magma, the equation x = (y ◇ (z ◇ z)) ◇ (z ◇ y) holds.\n\nThe theorem asserts that there exists some magma (i.e. some type equipped with this binary operation) in which Equation4327 is true but Equation2001 is not."
+    },
+    {
+        "source_idx": 1626,
+        "target_idx": 4080,
+        "NL_problem_statement": "Consider any type G that comes equipped with a binary operation (denoted by “◇”). We first assume that the following equation holds for every choice of elements u, w, x, y, and z in G:\n\n  x equals (y ◇ z) ◇ (w ◇ (u ◇ u)).\n\nThis assumption is called Equation1627.\n\nWe also consider a second equation, Equation4081, which states that for any elements x and y in G:\n\n  x ◇ x equals ((y ◇ x) ◇ x) ◇ y.\n\nThe theorem asserts that if the first equation (Equation1627) is satisfied in G, then the second equation (Equation4081) must also hold in G."
+    },
+    {
+        "source_idx": 832,
+        "target_idx": 4113,
+        "NL_problem_statement": "We define a magma as any type equipped with a binary operation (denoted by “◇”). Then we introduce two properties:\n\n1. The first property, Equation833, requires that for every pair of elements x and y in the magma, the equation x = x ◇ ((y ◇ x) ◇ (x ◇ y)) holds.\n\n2. The second property, Equation4114, demands that for every four elements w, x, y, and z in the magma, the equation x ◇ x = ((y ◇ z) ◇ w) ◇ z is satisfied.\n\nThe theorem states that there exists some magma (that is, some type with a binary operation) for which Equation833 is true but Equation4114 is not true."
+    },
+    {
+        "source_idx": 4118,
+        "target_idx": 2627,
+        "NL_problem_statement": "Consider a structure called a magma, which is a type equipped with a binary operation (denoted by “◇”). Two equations are then defined on any magma:\n\n• Equation4119: For every choice of elements x, y, and z in the magma, the result of x operating on y (x ◇ y) is equal to the result of first operating x on itself twice ((x ◇ x) ◇ x) and then operating the result on z.\n\n• Equation2628: For every choice of elements w, x, y, and z in the magma, x is equal to the result of operating y on the result of first operating z on w and then on z, and finally operating the overall result on x.\n\nThe theorem claims that there exists at least one magma (i.e., some specific type with an appropriate binary operation) in which Equation4119 holds true, but Equation2628 does not hold."
+    },
+    {
+        "source_idx": 614,
+        "target_idx": 3657,
+        "NL_problem_statement": "We define a magma as a set equipped with a binary operation (denoted by “◇”). Then consider two equations:\n\n• Equation615 is the statement that for every pair of elements x and y in the magma, the element x is equal to x ◇ (x ◇ ((x ◇ x) ◇ y)).\n\n• Equation3658 is the statement that for every six elements u, v, w, x, y, and z in the magma, the product x ◇ y is equal to z ◇ ((w ◇ u) ◇ v).\n\nThe problem asserts that there exists a magma (that is, a type with a binary operation) which satisfies Equation615 but does not satisfy Equation3658."
+    },
+    {
+        "source_idx": 3652,
+        "target_idx": 2642,
+        "NL_problem_statement": "There exists a type G that carries a magma structure (i.e. a binary operation denoted by “◇”) such that for all elements u, w, x, y, and z in G the equation x ◇ y = z ◇ ((w ◇ u) ◇ x) holds, and yet the equation x = (y ◇ ((z ◇ w) ◇ u)) ◇ v does not hold for every choice of elements u, v, w, x, y, and z in G."
+    },
+    {
+        "source_idx": 535,
+        "target_idx": 1305,
+        "NL_problem_statement": "Consider any algebraic structure (called a magma) that consists of a type with a binary operation (written as “◇”). Define two equations on this structure as follows:\n\n• Equation 536 states that for every choice of elements u, w, x, y, and z, the element x equals y operated with (y operated with (z operated with (w operated with u))). \n\n• Equation 1306 states that for every choice of elements w, x, y, and z, the element x equals y operated with the result of (((x operated with z) operated with z) operated with w).\n\nThe theorem asserts that if Equation 536 holds in the magma, then Equation 1306 must also hold in that magma."
+    },
+    {
+        "source_idx": 3201,
+        "target_idx": 1822,
+        "NL_problem_statement": "Consider an arbitrary set G equipped with a binary operation (denoted by \"◇\"). We define Equation3202 for G by requiring that for every choice of elements x, y, and z in G, the equality x = ((((y ◇ z) ◇ y) ◇ z) ◇ y) holds. Likewise, we define Equation1823 for G by requiring that for all elements w, x, y, and z in G, the equality x = ((y ◇ z) ◇ ((w ◇ w) ◇ z)) holds. The theorem states that if G satisfies Equation3202, then it must also satisfy Equation1823."
+    },
+    {
+        "source_idx": 1469,
+        "target_idx": 1548,
+        "NL_problem_statement": "We define a Magma to be a type equipped with a binary operation (written as “◇”). Then, we say that a magma G satisfies \"Equation1470\" if for every choice of elements x, y, and z from G, it holds that x is equal to the result of applying the operation “◇” to x and y, and then to the result of z “◇” (z “◇” y); in other words, x = (x ◇ y) ◇ (z ◇ (z ◇ y)). Likewise, a magma G satisfies \"Equation1549\" if for every choice of elements w, x, y, and z from G, we have x = (y ◇ y) ◇ (z ◇ (w ◇ z)). The theorem asserts that there exists a magma G for which Equation1470 holds but Equation1549 does not—that is, Equation1470 does not imply Equation1549."
+    },
+    {
+        "source_idx": 4672,
+        "target_idx": 3123,
+        "NL_problem_statement": "There exists a type G equipped with a binary operation (i.e. a magma) such that for every x, y, and z in G the equation (x ◇ y) ◇ z = (x ◇ z) ◇ y holds, yet it is not the case that for every x, y, and z in G the equation x = (((y ◇ x) ◇ z) ◇ x) ◇ z holds."
+    },
+    {
+        "source_idx": 3669,
+        "target_idx": 4196,
+        "NL_problem_statement": "Consider a binary operation \"◇\" defined on a set. The first equation (Equation3670) states that for any three elements x, y, and z, the result of applying the operation to x with itself (x ◇ x) is equal to applying the operation to x and y, and then applying the operation to the result together with z ◇ x; that is, x ◇ x = (x ◇ y) ◇ (z ◇ x). \n\nThe second equation (Equation4197) asserts that for any three elements x, y, and z, the result of x ◇ y is equal to applying the operation to z ◇ x and y, and then applying the operation to that result with z; that is, x ◇ y = ((z ◇ x) ◇ y) ◇ z.\n\nThe theorem claims that there exists a structure with such an operation (a magma) in which the first equation holds, but the second equation does not."
+    },
+    {
+        "source_idx": 56,
+        "target_idx": 443,
+        "NL_problem_statement": "Consider a structure with a binary operation (a “magma”) on a set G. Define Equation57 to mean that for every choice of elements x, y, and z in G, we have x = x ◇ (y ◇ (y ◇ z)). Define Equation444 to mean that for every x, y, and z in G, we have x = x ◇ (y ◇ (y ◇ (z ◇ z))). The theorem asserts that if a magma satisfies Equation57, then it also satisfies Equation444."
+    },
+    {
+        "source_idx": 1341,
+        "target_idx": 4411,
+        "NL_problem_statement": "Let G be a set equipped with a binary operation (denoted by “◇”). Define Equation1342 to mean that for every choice of elements x, y, and z in G, we have\n  x = y ◇ (((y ◇ z) ◇ z) ◇ z).\nSimilarly, define Equation4412 to mean that for every x, y, and z in G, the following holds:\n  x ◇ (x ◇ y) = (y ◇ z) ◇ y.\nThe theorem asserts that if G satisfies Equation1342 (i.e., if x = y ◇ (((y ◇ z) ◇ z) ◇ z) holds for all x, y, and z), then G must also satisfy Equation4412 (i.e., x ◇ (x ◇ y) = (y ◇ z) ◇ y holds for all x, y, and z)."
+    },
+    {
+        "source_idx": 2768,
+        "target_idx": 2938,
+        "NL_problem_statement": "We assume a set G equipped with a binary operation ◇ (making it a magma). We define two properties:\n\n• Equation 2769: For every choice of elements u, w, x, y, and z in G, the element x is equal to the result of performing the operation on y with itself, then on z with w, combining these two results, and finally combining that with u; in other words, x = ((y ◇ y) ◇ (z ◇ w)) ◇ u.\n\n• Equation 2939: For every choice of elements x and y in G, the element x is equal to the result of performing the operation on y with the result of y operating on x, then combining that with y, and finally combining the whole with x; that is, x = ((y ◇ (y ◇ x)) ◇ y) ◇ x.\n\nThe theorem states that if G satisfies Equation 2769, then it must also satisfy Equation 2939."
+    },
+    {
+        "source_idx": 1680,
+        "target_idx": 2846,
+        "NL_problem_statement": "Consider a binary operation (denoted by ◇) on a set. Define two properties for this operation:\n1. Equation1681: For all elements x and y, x equals the result of applying ◇ to y and x, and then applying ◇ to that result and the result of applying ◇ to x with itself (with another application of ◇ to that result and x).\n2. Equation2847: For all elements x, x equals the result of applying ◇ to the outcome of applying ◇ to x and to the result of applying ◇ to x with itself, then applying ◇ to that outcome and x, and finally applying ◇ to the result and x.\n\nThe theorem asserts that there exists a set equipped with such a binary operation (a magma) for which Equation1681 holds, yet Equation2847 does not hold."
+    },
+    {
+        "source_idx": 3010,
+        "target_idx": 3404,
+        "NL_problem_statement": "We define a structure called a magma, which is simply a type equipped with a binary operation (denoted by “◇”). Then we introduce two equations on any magma G. The first equation (labeled Equation3011) asserts that for every choice of elements x, y, and z in G, the element x is equal to (((y ◇ (z ◇ z)) ◇ y) ◇ x). The second equation (labeled Equation3405) asserts that for every x, y, and z in G, the result of x ◇ y is equal to (z ◇ (y ◇ (z ◇ y))). The theorem states that there exists some type G with a magma structure for which Equation3011 holds but Equation3405 does not hold."
+    },
+    {
+        "source_idx": 2293,
+        "target_idx": 1978,
+        "NL_problem_statement": "Consider a structure (called a magma) that is simply a type equipped with a binary operation (denoted by ◇). Two specific equations are introduced:\n\n1. Equation2294 requires that for any two elements x and y of the structure, x is equal to (y ◇ (x ◇ (x ◇ y))) ◇ y.\n\n2. Equation1979 requires that for any three elements x, y, and z of the structure, x is equal to (y ◇ (z ◇ y)) ◇ (y ◇ x).\n\nThe theorem then asserts that there is at least one type, together with a magma structure on it, in which Equation2294 holds true while Equation1979 fails."
+    },
+    {
+        "source_idx": 1846,
+        "target_idx": 4426,
+        "NL_problem_statement": "There exists a type G with a magma structure (that is, an operation ◇ on G) such that for every pair of elements x and y in G the equation x = (x ◇ (y ◇ x)) ◇ (x ◇ x) holds, while the equation x ◇ (x ◇ y) = (z ◇ w) ◇ x does not hold for all elements w, x, y, and z in G."
+    },
+    {
+        "source_idx": 2503,
+        "target_idx": 254,
+        "NL_problem_statement": "We define a \"magma\" to be any type equipped with a binary operation (denoted ◇). Two equations are then introduced. Equation2504 requires that for every pair of elements x and y in the magma, x must equal the result of applying the operation ◇ to y and to the result of applying ◇ to the pair (x ◇ y) and x, and then applying ◇ with y. Equation255 requires that every element x in the magma must equal the result of applying ◇ in succession to x with itself four times (specifically, ((x ◇ x) ◇ x) ◇ x). The theorem asserts that there exists some magma in which Equation2504 holds but Equation255 does not."
+    },
+    {
+        "source_idx": 4508,
+        "target_idx": 869,
+        "NL_problem_statement": "We define a structure called a Magma on any type, which means there is a binary operation (denoted by “◇”) on elements of that type. Two properties (or equations) are then introduced for a Magma structure on a type G. The first property, Equation4509, says that for any elements w, x, y, and z in G, performing the operation in the pattern “x operating on (y operating on z)” is always equal to “(x operating on x) operating on w”. The second property, Equation870, says that for any elements x and y in G, the element x is equal to the result of y operating on the result of “(x operating on x) operating on (x operating on y)”. The theorem asserts that there exists some type G with a Magma structure such that the first property (Equation4509) holds in G, but the second property (Equation870) does not."
+    },
+    {
+        "source_idx": 2250,
+        "target_idx": 1730,
+        "NL_problem_statement": "We start with a structure called a magma, which is just a set equipped with a binary operation (denoted here by ◇). Two equations are defined on any magma:\n\n1. Equation2251 demands that for every three elements x, y, and z in the magma, x is equal to the result of first taking y and z, applying the operation, then applying the operation to x with the result, and finally applying the operation to that result with z—in short, x must equal (x ◇ (x ◇ (y ◇ z))) ◇ z.\n\n2. Equation1731 requires that for every two elements x and y, x is equal to the result of first applying the operation to y with itself, then applying the operation to that result with x—i.e., x must equal (y ◇ y) ◇ ((y ◇ y) ◇ x).\n\nThe theorem asserts that there exists a magma (a particular set with a binary operation) that satisfies Equation2251 but does not satisfy Equation1731."
+    },
+    {
+        "source_idx": 3662,
+        "target_idx": 370,
+        "NL_problem_statement": "Consider a structure called a magma, which is just a type equipped with a binary operation (denoted by \"◇\"). Two equations are defined on such a magma:\n\n1. Equation3663 states that for every choice of elements x, y, and z in the magma, the equation x ◇ x = (x ◇ x) ◇ (y ◇ z) holds.\n2. Equation371 states that for every choice of elements x, y, and z in the magma, the equation x ◇ x = (y ◇ z) ◇ y holds.\n\nThe theorem asserts that Equation3663 does not imply Equation371. In other words, there exists some magma for which Equation3663 is satisfied but Equation371 is not."
+    },
+    {
+        "source_idx": 678,
+        "target_idx": 457,
+        "NL_problem_statement": "We are considering a type equipped with a binary operation (a “magma”). In any such magma, we define two equations. The first, called Equation679, says that for every pair of elements x and y, the element x is equal to y combined with (x combined with the result of combining (y combined with y) and x), using the binary operation. The second, called Equation458, states that for any four elements w, x, y, and z, the element x is equal to x combined with (y combined with (z combined with (w combined with x))).\n\nThe theorem asserts that there is at least one magma (that is, at least one type with a binary operation) in which Equation679 holds for every pair of elements, yet Equation458 does not hold for all quadruples of elements."
+    },
+    {
+        "source_idx": 1261,
+        "target_idx": 4259,
+        "NL_problem_statement": "We define a structure called a \"magma,\" which is simply a set equipped with a binary operation (denoted by \"◇\"). Two equations are then introduced. The first equation (Equation1262) states that for any three elements x, y, and z in the magma, the element x is equal to the result of performing the operation on x and the composite element obtained by performing the operation on y and z, then on that result and y, and finally on that result and x. The second equation (Equation4260) requires that for any four elements w, x, y, and z, the result of the operation on x and y is equal to the result of performing the operation on z and w, then on that result and w, and finally on that result and w again.\n\nThe theorem asserts that there exists at least one magma – that is, a type equipped with a binary operation – in which the first equation (Equation1262) holds while the second equation (Equation4260) does not hold."
+    },
+    {
+        "source_idx": 3170,
+        "target_idx": 1120,
+        "NL_problem_statement": "We consider a set G equipped with a binary operation (that is, a magma). Two equations involving this operation are defined as follows:\n\n• Equation3171 states that for every choice of four elements w, x, y, and z in G, the element x is equal to the result of first combining y with itself, then combining that result with z, then combining that result with w, and finally combining that with x.\n\n• Equation1121 states that for every choice of three elements x, y, and z in G, the element x is equal to the result of combining y with the element obtained by first combining y with the element obtained by combining y with x, and then combining that result with z.\n\nThe theorem claims that there exists some set G equipped with a binary operation (a magma) such that Equation3171 holds in G, while Equation1121 does not hold in G."
+    }
+]

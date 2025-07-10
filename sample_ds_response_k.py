@@ -59,10 +59,11 @@ def main(args):
                 "pad_token_id": tokenizer.eos_token_id,
             }
 
-        outputs = model.generate(
-            inputs,
-            **generation_kwargs
-        )
+        with torch.inference_mode():
+            outputs = model.generate(
+                inputs,
+                **generation_kwargs
+            )
 
         # Determine the base path and filename
         implies_or_not = "implies" if "true" in theorem_generator.implications[source_idx][target_idx] else "not_implies"

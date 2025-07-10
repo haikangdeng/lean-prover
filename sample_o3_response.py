@@ -23,6 +23,15 @@ def main(args):
     with open("100_edges.json", "r") as f:
         edges = json.load(f)
 
+    # Create output directory structure once
+    style = "end2end"
+    if args.informal2formal:
+        style = "informal2formal"
+    else:
+        style = style + "_" + args.reasoning
+    output_dir = os.path.join(args.output_dir, args.model, style)
+    os.makedirs(output_dir, exist_ok=True)
+
     for i, (source_idx, target_idx) in enumerate(tqdm(edges[:args.num_examples])):
     # for i in tqdm(range(args.num_examples)):
     #     source_idx, target_idx = 0, 0
@@ -31,27 +40,24 @@ def main(args):
     #         target_idx = torch.randint(0, len(theorem_generator.equations), (1,)).item()
 
         statement = theorem_generator.prepare_statement(source_idx=source_idx, target_idx=target_idx)
-        prompt = format_prompt(statement, cot=args.cot, informal2formal=args.informal2formal)
+        format_type = "informal2formal" if args.informal2formal else "default"
+        prompt = format_prompt(statement, format_type=format_type)
 
         output = client.responses.create(
             model=args.model,
             instructions="You are a helpful assistant.",
             input=prompt,
+            reasoning={"effort": args.reasoning}
             # temperature=0   # for greedy decoding
         )
 
         response = output.output_text
         
         implies_or_not = "implies" if "true" in theorem_generator.implications[source_idx][target_idx] else "not_implies"
-        response_file_name = f"Equation{source_idx + 1}_{implies_or_not}_Equation{target_idx + 1}"
-        style = "no_cot"
-        if args.cot:
-            style = "cot"
-        if args.informal2formal:
-            style = "informal2formal"
-        response_file_name = os.path.join(args.output_dir, args.model, style, response_file_name)
+        response_file_name = f"Equation{source_idx + 1}_{implies_or_not}_Equation{target_idx + 1}.json"
+        response_file_name = os.path.join(output_dir, response_file_name)
 
-        with open(response_file_name + ".json", "w") as f:
+        with open(response_file_name, "w") as f:
             json.dump({
                 "statement": statement,
                 "response": response,
@@ -72,8 +78,8 @@ def main(args):
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--num_examples", type=int, default=100, help="Number of examples to generate")
-    parser.add_argument("--cot", action="store_true", help="Whether to use chain-of-thought prompting")
     parser.add_argument("--model", type=str, default="o3", choices=["o3-mini", "o3"])
+    parser.add_argument("--reasoning", type=str, default="medium", choices=["low", "medium", "high"])
     parser.add_argument("--output_dir", type=str, default="output")
     parser.add_argument("--informal2formal", action="store_true", help="Whether to use informal-to-formal prompting")
 
